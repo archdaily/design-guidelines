@@ -1,3 +1,9 @@
+body {
+  font-size: 12px;
+  color: #303030;
+  line-height: 1.7em;
+}
+
 img {
   max-width: 100%;
 }
@@ -25,7 +31,9 @@ img {
 #navbar .nav-item a:hover {
   color: #5E95C7;
 }
-
+.section-box {
+  margin-bottom: 40px;
+}
 
 /*COLORS*/
 .color-box {
@@ -65,6 +73,15 @@ img {
 .bkg-light-yellow-color{background:#FFFFEC;}
 
 
+/*TYPOGRAPHY*/
+h1, h2, h3, h4, h5 {
+  margin-bottom: 1em;
+}
+h1 {font-size: 24px;}
+h2 {font-size: 21px;}
+h3 {font-size: 19px;}
+h4 {font-size: 17px;}
+h5 {font-size: 15px;}
 
 
 
