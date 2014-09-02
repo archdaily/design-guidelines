@@ -1,1 +1,14 @@
-body {background: red;}
+#navbar {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#navbar .nav-item {
+  display: inline-block;
+  margin-right: 15px;
+}
+#navbar .nav-item a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #303030;
+}
