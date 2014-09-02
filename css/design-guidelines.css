@@ -32,7 +32,10 @@ img {
   color: #5E95C7;
 }
 .section-box {
-  margin-bottom: 40px;
+  margin-bottom: 100px;
+}
+.specs-ul {
+  margin-bottom: 25px;
 }
 
 /*COLORS*/
@@ -41,9 +44,10 @@ img {
   text-align: center;
   vertical-align: middle;
   margin-right: 10px;
-  width: 100px;
-  height: 3em;
-  line-height: 3em;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
 }
 .blue               {color:#026CB6;}
 .light-blue         {color:#5E95C7;}
