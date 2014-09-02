@@ -1,14 +1,27 @@
+img {
+  max-width: 100%;
+}
+.logo-zone {
+  width: 145px;
+  margin: 0 auto 40px;
+}
 #navbar {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
 }
 #navbar .nav-item {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 18px;
 }
 #navbar .nav-item a {
+  display: inline-block;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
   color: #303030;
+  line-height: 2.6em;
+}
+#navbar .nav-item a:hover {
+  color: #5E95C7;
 }
