@@ -92,7 +92,12 @@ img {
 
 
 /*TYPOGRAPHY*/
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
+  margin-bottom: 1.7em;
+  border-bottom: 1px solid #EEE;
+  line-height: 1.7em;
+}
+h4, h5 {
   margin-bottom: 1em;
 }
 h1 {font-size: 22px;}
