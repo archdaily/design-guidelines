@@ -40,13 +40,15 @@ img {
 .thumbnails-3 {
   width: 103%;
   margin-left: -3% !important;
-  margin-bottom: 60px; 
+  margin-bottom: 25px; 
   overflow: hidden;
 }
 .thumbnails-3 > li {
   width: 30.3333%;
+  height: 210px;
   float: left;
   margin-left: 3%; 
+  margin-bottom: 25px;
   list-style: none;
 }
 
