@@ -37,6 +37,15 @@ img {
 .specs-ul {
   margin-bottom: 25px;
 }
+.thumbnails-3 {
+  width: 102%;
+  margin-left: -2%;
+  margin-bottom: 60px; 
+}
+.thumbnails-3 li {
+  width: 31.3333%;
+  margin-left: 2%; 
+}
 
 /*COLORS*/
 .color-box {
@@ -81,11 +90,11 @@ img {
 h1, h2, h3, h4, h5 {
   margin-bottom: 1em;
 }
-h1 {font-size: 24px;}
-h2 {font-size: 21px;}
-h3 {font-size: 19px;}
-h4 {font-size: 17px;}
-h5 {font-size: 15px;}
+h1 {font-size: 23px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 14px;}
 
 
 
