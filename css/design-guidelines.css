@@ -51,6 +51,9 @@ img {
   margin-bottom: 25px;
   list-style: none;
 }
+.secondary-nav {
+  margin-bottom: 30px;
+}
 
 /*COLORS*/
 .color-box {
@@ -94,8 +97,10 @@ img {
 /*TYPOGRAPHY*/
 h1, h2, h3 {
   margin-bottom: 1.7em;
-  border-bottom: 1px solid #EEE;
   line-height: 1.7em;
+}
+h3 {
+  border-bottom: 1px solid #EEE;
 }
 h4, h5 {
   margin-bottom: 1em;
