@@ -44,6 +44,9 @@ img {
 .specs-ul {
   margin-bottom: 25px;
 }
+.specs-ul li {
+  margin-bottom: 3px;
+}
 .thumbnails-3 {
   width: 103%;
   margin-left: -3% !important;
