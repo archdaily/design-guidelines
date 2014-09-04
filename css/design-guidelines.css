@@ -118,6 +118,25 @@ h3 {font-size: 17px;}
 h4 {font-size: 15px;}
 h5 {font-size: 13px;}
 
+p {
+  margin-bottom: 30px;
+}
+
+.font-primary {font-family: "Source Sans Pro";}
+.font-light   {font-weight: lighter;}
+.font-regula  {font-weight: normal;}
+.font-bold    {font-weight: bolder;}
+
+.article-title    {font-size: 25px;}
+.primary-title    {font-size: 17px;}
+.secondary-title  {font-size: 14px;}
+.small-title      {font-size: 13px;}
+.smaller-title    {font-size: 12px;}
+.link-more        {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 
 
