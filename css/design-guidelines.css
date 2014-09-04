@@ -106,26 +106,24 @@ h1, h2, h3 {
   margin-bottom: 1.7em;
   line-height: 1.7em;
 }
-h3 {
+.section-title {
   border-bottom: 1px solid #EEE;
+  font-size: 17px;
 }
 h4, h5 {
   margin-bottom: 1em;
 }
-h1 {font-size: 22px;}
-h2 {font-size: 19px;}
-h3 {font-size: 17px;}
-h4 {font-size: 15px;}
-h5 {font-size: 13px;}
-
 p {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
-
-.font-primary {font-family: "Source Sans Pro";}
-.font-light   {font-weight: lighter;}
-.font-regula  {font-weight: normal;}
-.font-bold    {font-weight: bolder;}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+}
+.font-primary     {font-family: "Source Sans Pro";}
+.font-light       {font-weight: lighter;}
+.font-regula      {font-weight: normal;}
+.font-bold        {font-weight: bolder;}
 
 .article-title    {font-size: 25px;}
 .primary-title    {font-size: 17px;}
