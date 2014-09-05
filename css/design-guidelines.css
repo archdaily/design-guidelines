@@ -73,7 +73,7 @@ a:hover {
   margin-bottom: 30px;
 }
 
-/*COLORS*/
+/*************************   COLORS   ****************************/
 .color-box {
   display: inline-block;
   text-align: center;
@@ -111,7 +111,7 @@ a:hover {
 .bkg-light-yellow-color {background:#FFFFEC;}
 
 
-/*TYPOGRAPHY*/
+/*****************************   TYPOGRAPHY   *****************************/
 h1, h2, h3 {
   margin-bottom: 1.7em;
   line-height: 1.7em;
@@ -147,7 +147,42 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+/*****************************   BUTTONS   *****************************/
 
+.btn,
+input.btn,
+input[type="submit"] {
+  display: inline-block;
+  height: 2.6em;
+  line-height: 2.5em;
+  padding: 0 1.1em;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: $font-primary;
+  color: #FFF;
+  background-color: $color-link;
+  background-image: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 0 !important;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+      -ms-border-radius: 0;
+       -o-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+}
+.btn:hover,
+input.btn:hover,
+input[type="submit"]:hover {
+  color: #FFF;
+  background-color: $color-link-hover;
+  text-decoration: none;
+}
 
 
 
