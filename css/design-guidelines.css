@@ -197,6 +197,14 @@ input[type="submit"]:hover {
   font-size: 24px;
   margin: 25px 0;
 }
+.btn-second {
+  background-color: #999999 !important;
+  color: #FFF;
+}
+.btn-second:hover {
+  background-color: #999999 !important;
+  opacity: .8;
+}
 .btn.btn-disabled,
 .btn[disabled]{
   background-color: #ccc !important;
