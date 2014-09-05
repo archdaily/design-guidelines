@@ -23,7 +23,7 @@ categories: jekyll update
 		<div class="color-box bkg-font-color"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#303030</li>
-			<li><strong>SASS Variable: </strong>$font-color</li>
+			<li><strong>SASS Variable: </strong>$color-font</li>
 			<li><strong>Usage: </strong>All Text over all our light backgrounds.</li>
 		</ul>
 	</li>
@@ -32,8 +32,17 @@ categories: jekyll update
 		<div class="color-box bkg-cn-font-color"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#555555</li>
-			<li><strong>SASS Variable: </strong>$font-cn-color</li>
+			<li><strong>SASS Variable: </strong>$color-font-cn</li>
 			<li><strong>Usage: </strong>All Text over all our light backgrounds.</li>
+		</ul>
+	</li>
+	<li>
+		<h4 class="secondary-title">1.1.3. Hint Font Color</h4>
+		<div class="color-box bkg-hint-color"></div>
+		<ul class="specs-ul">
+			<li><strong>RGB: </strong>#999999</li>
+			<li><strong>SASS Variable: </strong>$color-hint</li>
+			<li><strong>Usage: </strong>To hints and captions or every light gray font.</li>
 		</ul>
 	</li>
 </ul>
@@ -45,7 +54,7 @@ categories: jekyll update
 		<div class="color-box bkg-blue"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#026CB6</li>
-			<li><strong>SASS Variable: </strong>$link-color</li>
+			<li><strong>SASS Variable: </strong>$color-link</li>
 			<li><strong>Usage: </strong>Is the text color to all links and the background-color to all the primary action buttons. Article titles with links don't use this color.</li>
 		</ul>
 	</li>
@@ -54,7 +63,7 @@ categories: jekyll update
 		<div class="color-box bkg-light-blue"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#5E95C7</li>
-			<li><strong>SASS Variable: </strong>$hover-link-color</li>
+			<li><strong>SASS Variable: </strong>$color-link-hover</li>
 			<li><strong>Usage: </strong>When a linked element is on hover state use this light blue. Is very important to article titles</li>
 		</ul>
 	</li>
@@ -67,7 +76,7 @@ categories: jekyll update
 		<div class="color-box" style="background: #fff; border: 1px solid #f1f1f1;"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#FFFFFF</li>
-			<li><strong>SASS Variable: </strong></li>
+			<li><strong>SASS Variable: </strong>$color-background</li>
 			<li><strong>Usage: </strong>Is the body and principal background color. You have to try to avoid another backgraund colors.</li>
 		</ul>
 	</li>
@@ -76,7 +85,7 @@ categories: jekyll update
 		<div class="color-box bkg-gray-1"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#F1F1F1</li>
-			<li><strong>SASS Variable: </strong></li>
+			<li><strong>SASS Variable: </strong>$color-background-2</li>
 			<li><strong>Usage: </strong>To avoid floating sections on the white you can use this background color, a light version of gray.</li>
 		</ul>
 	</li>
@@ -85,7 +94,7 @@ categories: jekyll update
 		<div class="color-box bkg-gray-2"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#F7F7F7</li>
-			<li><strong>SASS Variable: </strong></li>
+			<li><strong>SASS Variable: </strong>$color-background-3</li>
 			<li><strong>Usage: </strong>Less used, if you have to make contrast with the other gray background this is a lighter version.</li>
 		</ul>
 	</li>
@@ -94,7 +103,7 @@ categories: jekyll update
 		<div class="color-box bkg-dark"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#111111</li>
-			<li><strong>SASS Variable: </strong></li>
+			<li><strong>SASS Variable: </strong>$color-background-dark</li>
 			<li><strong>Usage: </strong>To dark backgrounds, like the top bar one, this is the color.</li>
 		</ul>
 	</li>
@@ -106,7 +115,7 @@ categories: jekyll update
 		<div class="color-box bkg-border-color"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#EEEEEE</li>
-			<li><strong>SASS Variable: </strong>$border-color</li>
+			<li><strong>SASS Variable: </strong>$color-border</li>
 			<li><strong>Usage: </strong>When an element needs a border, this have to be used solid, with 1px width and with this color.</li>
 		</ul>
 	</li>
@@ -119,7 +128,7 @@ categories: jekyll update
 		<div class="color-box bkg-red-color"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#CC0A3C</li>
-			<li><strong>SASS Variable: </strong>$red-color</li>
+			<li><strong>SASS Variable: </strong>$color-red</li>
 			<li><strong>Usage: </strong>Special to errors feedback. Use it on backgraund buttons with white text or as text color.</li>
 		</ul>
 	</li>
@@ -128,7 +137,7 @@ categories: jekyll update
 		<div class="color-box bkg-green-color"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#00AE85</li>
-			<li><strong>SASS Variable: </strong>$green-color</li>
+			<li><strong>SASS Variable: </strong>$color-green</li>
 			<li><strong>Usage: </strong>This is the success color. Like the red color you can use it as background buttons or as text color.</li>
 		</ul>
 	</li>
@@ -137,7 +146,7 @@ categories: jekyll update
 		<div class="color-box bkg-yellow-color"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#00AE85</li>
-			<li><strong>SASS Variable: </strong>$yellow-color</li>
+			<li><strong>SASS Variable: </strong>$color-yellow</li>
 			<li><strong>Usage: </strong>Only for text color of a warning message with white background.</li>
 		</ul>
 	</li>
@@ -146,7 +155,7 @@ categories: jekyll update
 		<div class="color-box bkg-light-yellow-color"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#FFFFEC</li>
-			<li><strong>SASS Variable: </strong>$yellow-light-color</li>
+			<li><strong>SASS Variable: </strong>$color-yellow-light</li>
 			<li><strong>Usage: </strong>Only for background color of a warning message with $font-color text</li>
 		</ul>
 	</li>
@@ -159,7 +168,7 @@ categories: jekyll update
 		<div class="color-box bkg-facebook-color"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#3B5998</li>
-			<li><strong>SASS Variable: </strong>$facebook-color </li>
+			<li><strong>SASS Variable: </strong>$color-facebook</li>
 			<li><strong>Usage: </strong>To custom facebook buttons this is the background color.</li>
 		</ul>
 	</li>
@@ -168,7 +177,7 @@ categories: jekyll update
 		<div class="color-box bkg-light-blue"></div>
 		<ul class="specs-ul">
 			<li><strong>RGB: </strong>#55ACEE</li>
-			<li><strong>SASS Variable: </strong>$twitter-color</li>
+			<li><strong>SASS Variable: </strong>$color-twitter</li>
 			<li><strong>Usage: </strong>To custom twitter buttons this is the background color.</li>
 		</ul>
 	</li>

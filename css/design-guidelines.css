@@ -76,32 +76,31 @@ img {
   height: 2em;
   line-height: 2em;
 }
-.blue               {color:#026CB6;}
-.light-blue         {color:#5E95C7;}
-.font-color         {color:#303030;}
-.help-color         {color:#F7F7F7;}
-.cn-font-color      {color:#555555;}
-.red-color          {color:#CC0A3C;}
-.green-color        {color:#00AE85;}
-.yellow-color       {color:#FDE700;}
-.light-yellow-color {color:#FFFFEC;}
+.blue                   {color:#026CB6;}
+.light-blue             {color:#5E95C7;}
+.font-color             {color:#303030;}
+.hint-color             {color:#999999;}
+.cn-font-color          {color:#555555;}
+.red-color              {color:#CC0A3C;}
+.green-color            {color:#00AE85;}
+.yellow-color           {color:#FDE700;}
+.light-yellow-color     {color:#FFFFEC;}
 
-.bkg-border-color      {background:#EEEEEE;}
-.bkg-blue              {background:#026CB6;}
-.bkg-light-blue        {background:#5E95C7;}
-.bkg-font-color        {background:#303030;}
-.bkg-cn-font-color     {background:#555555;}
-.bkg-gray-1            {background:#F1F1F1;}
-.bkg-gray-2            {background:#F7F7F7;}
-.bkg-dark              {background:#111111;}
-.bkg-gray-inactive     {background:#F7F7F7;}
-.bkg-help-color        {background:#F7F7F7;}
-.bkg-facebook-color    {background:#3B5998;}
-.bkg-twitter-color     {background:#55ACEE;}
-.bkg-red-color         {background:#CC0A3C;}
-.bkg-green-color       {background:#00AE85;}
-.bkg-yellow-color      {background:#FDE700;}
-.bkg-light-yellow-color{background:#FFFFEC;}
+.bkg-border-color       {background:#EEEEEE;}
+.bkg-blue               {background:#026CB6;}
+.bkg-light-blue         {background:#5E95C7;}
+.bkg-font-color         {background:#303030;}
+.bkg-cn-font-color      {background:#555555;}
+.bkg-gray-1             {background:#F1F1F1;}
+.bkg-gray-2             {background:#F7F7F7;}
+.bkg-dark               {background:#111111;}
+.bkg-hint-color         {background:#999999;}
+.bkg-facebook-color     {background:#3B5998;}
+.bkg-twitter-color      {background:#55ACEE;}
+.bkg-red-color          {background:#CC0A3C;}
+.bkg-green-color        {background:#00AE85;}
+.bkg-yellow-color       {background:#FDE700;}
+.bkg-light-yellow-color {background:#FFFFEC;}
 
 
 /*TYPOGRAPHY*/
