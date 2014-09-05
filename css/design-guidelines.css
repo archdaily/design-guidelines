@@ -5,6 +5,7 @@ body {
 }
 .site {
   min-height: 900px;
+  padding-bottom: 80px;
 }
 .footer {
   height: 50px;
@@ -72,6 +73,10 @@ a:hover {
 }
 .secondary-nav {
   margin-bottom: 30px;
+}
+.secondary-nav li {
+  font-size: 15px;
+  line-height: 1.7em;
 }
 
 /*************************   COLORS   ****************************/
@@ -192,8 +197,17 @@ input[type="submit"]:hover {
   font-size: 24px;
   margin: 25px 0;
 }
-
-
+.btn.btn-disabled,
+.btn[disabled]{
+  background-color: #ccc !important;
+  color: #fafafa !important;
+}
+.btn.btn-disabled:hover,
+.btn[disabled]:hover {
+  background-color: #ccc;
+  color: #f7f7f7;
+  cursor: not-allowed;
+}
 
 
 
