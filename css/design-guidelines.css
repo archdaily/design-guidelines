@@ -51,6 +51,7 @@ a:hover {
 }
 .specs-ul {
   margin-bottom: 25px;
+  font-family: "Consolas", "Courier", sans-serif;
 }
 .specs-ul li {
   margin-bottom: 3px;
