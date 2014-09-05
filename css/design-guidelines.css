@@ -159,9 +159,9 @@ input[type="submit"] {
   margin: 0;
   font-size: 12px;
   font-weight: 600;
-  font-family: $font-primary;
+  font-family: "Source Sans Pro";
   color: #FFF;
-  background-color: $color-link;
+  background-color: #026CB6;
   background-image: none;
   text-decoration: none;
   text-transform: uppercase;
@@ -180,7 +180,7 @@ input[type="submit"] {
 input.btn:hover,
 input[type="submit"]:hover {
   color: #FFF;
-  background-color: $color-link-hover;
+  background-color: #5E95C7;
   text-decoration: none;
 }
 
