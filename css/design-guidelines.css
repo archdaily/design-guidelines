@@ -116,10 +116,7 @@ h1, h2, h3 {
   margin-bottom: 1.7em;
   line-height: 1.7em;
 }
-.section-title {
-  border-bottom: 1px solid #EEE;
-  font-size: 17px;
-}
+
 h4, h5 {
   margin-bottom: 1em;
 }
@@ -135,11 +132,15 @@ h1, h2, h3, h4, h5, h6 {
 .font-regular     {font-weight: normal;}
 .font-bold        {font-weight: bolder;}
 
-.article-title    {font-size: 25px;}
-.primary-title    {font-size: 17px;}
-.secondary-title  {font-size: 14px;}
-.small-title      {font-size: 13px;}
-.smaller-title    {font-size: 12px;}
+.title-article    {font-size: 25px;}
+.title-primary    {font-size: 17px;}
+.title-secondary  {font-size: 14px;}
+.title-small      {font-size: 13px;}
+.title-smaller    {font-size: 12px;}
+.title-section    {
+  border-bottom: 1px solid #EEE;
+  font-size: 17px;
+}
 .link-more        {
   font-size: 12px;
   font-weight: bold;
