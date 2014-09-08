@@ -59,6 +59,8 @@ a:hover {
 }
 .folders-tree {
   list-style-type: none;
+  font-size: 14px;
+  line-height: 1.7em;
 }
 .folder {
   font-weight: bolder;
