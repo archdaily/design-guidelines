@@ -57,6 +57,12 @@ a:hover {
 .specs-ul li {
   margin-bottom: 3px;
 }
+.folders-tree {
+  list-style-type: none;
+}
+.folder {
+  font-weight: bolder;
+}
 .thumbnails-3 {
   width: 103%;
   margin-left: -3% !important;
