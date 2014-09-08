@@ -63,16 +63,16 @@ a:hover {
 .folder {
   font-weight: bolder;
 }
-.folder-tree .level-1 {
+.folders-tree .level-1 {
   text-indent: 1em;
 }
-.folder-tree .level-2 {
+.folders-tree .level-2 {
   text-indent: 2em;
 }
-.folder-tree .level-3 {
+.folders-tree .level-3 {
   text-indent: 3em;
 }
-.folder-tree .level-4 {
+.folders-tree .level-4 {
   text-indent: 4em;
 }
 .thumbnails-3 {
