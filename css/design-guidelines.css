@@ -63,6 +63,18 @@ a:hover {
 .folder {
   font-weight: bolder;
 }
+.folder .level-1 {
+  text-indent: 1em;
+}
+.folder .level-2 {
+  text-indent: 2em;
+}
+.folder .level-3 {
+  text-indent: 3em;
+}
+.folder .level-4 {
+  text-indent: 4em;
+}
 .thumbnails-3 {
   width: 103%;
   margin-left: -3% !important;
