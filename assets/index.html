@@ -1,43 +1,58 @@
 ---
 layout: post
-title:  "Assets Structure"
+title:  "Assets"
 date:   2014-02-24 15:22:19
 categories: jekyll update
 ---
 
-<ul class="specs-ul folders-tree">
-	<li class="folder">.assets/</li>
-	<li class="folder level-1">stylesheets/</li>
-	<li class="folder level-2">└─ scaffold/</li>
-	<li class="level-3">└─ _reset.css.scss</li>
-	<li class="level-3">└─ _normalize.css.scss</li>
-	<li class="level-3">└─ _variables.css.scss</li>
-	<li class="level-3">└─ _mixins.css.scss</li>
-	<li class="level-3">└─ _layout.css.scss</li>
+<div class="section-box">
+	<h3 class="title-section">1. Files structure</h3>
+	<p>
+		This is the structure to the styles files. There are four principal folders with files that can find on any application: Scaffold, global_components, global_layout_components and mobile. Views is the folder reserved to the styles used only on this application. Inside the mobile folder we placed the mobile stiles
+	</p>
+	<ul class="specs-ul folders-tree">
+		<li class="folder">.assets/</li>
+		<li class="folder level-1">stylesheets/</li>
+		<li class="folder level-2">└─ scaffold/</li>
+		<li class="level-3">└─ _reset.css.scss</li>
+		<li class="level-3">└─ _normalize.css.scss</li>
+		<li class="level-3">└─ _variables.css.scss</li>
+		<li class="level-3">└─ _mixins.css.scss</li>
+		<li class="level-3">└─ _layout.css.scss</li>
 
-	<li class="folder level-2">└─ global_components/</li>
-	<li class="level-3">└─ _typography.css.scss</li>
-	<li class="level-3">└─ _images.css.scss</li>
-	<li class="level-3">└─ _buttons.css.scss</li>
-	<li class="level-3">└─ _forms.css.scss</li>
-	<li class="level-3">└─ _tables.css.scss</li>
-	<li class="level-3">└─ _thumbnails.css.scss</li>
-	<li class="level-3">└─ _navigation.css.scss</li>
-	<li class="level-3">└─ _pagination.css.scss</li>
-	<li class="level-3">└─ _widgets.css.scss</li>
+		<li class="folder level-2">└─ global_components/</li>
+		<li class="level-3">└─ _typography.css.scss</li>
+		<li class="level-3">└─ _images.css.scss</li>
+		<li class="level-3">└─ _buttons.css.scss</li>
+		<li class="level-3">└─ _forms.css.scss</li>
+		<li class="level-3">└─ _tables.css.scss</li>
+		<li class="level-3">└─ _thumbnails.css.scss</li>
+		<li class="level-3">└─ _navigation.css.scss</li>
+		<li class="level-3">└─ _pagination.css.scss</li>
+		<li class="level-3">└─ _widgets.css.scss</li>
 
-	<li class="folder level-2">└─ global_layout_components/</li>
-	<li class="level-3">└─ _top_bar.css.scss</li>
-	<li class="level-3">└─ _navbar.css.scss</li>
-	<li class="level-3">└─ _footer.css.scss</li>
-	<li class="level-3">└─ _mobile_navigation.css.scss</li>
+		<li class="folder level-2">└─ global_layout_components/</li>
+		<li class="level-3">└─ _top_bar.css.scss</li>
+		<li class="level-3">└─ _navbar.css.scss</li>
+		<li class="level-3">└─ _footer.css.scss</li>
+		<li class="level-3">└─ _mobile_navigation.css.scss</li>
 
-	<li class="folder level-2">└─ mobile/</li>
-	<li class="folder level-3">└─ global_components/</li>
-	<li class="folder level-3">└─ global_layout_components/</li>
-	<li class="folder level-3">└─ views/</li>
+		<li class="folder level-2">└─ mobile/</li>
+		<li class="folder level-3">└─ global_components/</li>
+		<li class="folder level-3">└─ global_layout_components/</li>
+		<li class="folder level-3">└─ views/</li>
 
-	<li class="folder level-2">└─ views/</li>
-	<li class="hint-color level-3">└─ /* Here all the views styles for this particular application */</li>
+		<li class="folder level-2">└─ views/</li>
+		<li class="hint-color level-3">└─ /* Here all the views styles for this particular application */</li>
 
-</ul>
+	</ul>
+</div>
+
+<div class="section-box">
+	<h3 class="title-section">1. Files importation</h3>
+</div>
+
+{% highlight scss %}
+//Old Files
+@import "contact";
+{% endhighlight %}
