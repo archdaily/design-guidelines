@@ -54,6 +54,14 @@ categories: jekyll update
 		Here is the order to import the stylesheets inside the application.css.scss file.
 	</p>
 {% highlight scss %}
+
+/*
+ * Adding the require_self you can import directly on this file
+ * using any order you want.
+ *
+ *= require_self
+ */
+
 //scaffold
 @import "scaffold/all_files_inside_this_folder";
 @import "all_library_stylesheets";
