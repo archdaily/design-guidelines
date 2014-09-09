@@ -152,6 +152,8 @@ p,
 }
 .post pre {
   padding: 1em;
+}
+pre .language-html {
   white-space: normal;
 }
 h1, h2, h3, h4, h5, h6 {
