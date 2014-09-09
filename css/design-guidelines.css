@@ -146,8 +146,12 @@ h1, h2, h3 {
 h4, h5 {
   margin-bottom: 1em;
 }
-p {
+p,
+.post pre {
   margin-bottom: 25px;
+}
+.post pre {
+  padding: 1em;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;

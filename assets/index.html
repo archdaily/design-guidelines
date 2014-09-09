@@ -8,7 +8,7 @@ categories: jekyll update
 <div class="section-box">
 	<h3 class="title-section">1. Files structure</h3>
 	<p>
-		This is the structure to the styles files. There are four principal folders with files that can find on any application: Scaffold, global_components, global_layout_components and mobile. Views is the folder reserved to the styles used only on this application. Inside the mobile folder we placed the mobile stiles
+		This is the structure to the styles files. There are four principal folders with files that can find on any application: Scaffold, global_components, global_layout_components and mobile. Views is the folder reserved to the styles used only on the current application. Inside the mobile folder we placed the mobile styles for all the components, including the views files.
 	</p>
 	<ul class="specs-ul folders-tree">
 		<li class="folder">.assets/</li>
@@ -50,9 +50,37 @@ categories: jekyll update
 
 <div class="section-box">
 	<h3 class="title-section">1. Files importation</h3>
+	<p>
+		Here is the order to import the stylesheets inside the application.css.scss file.
+	</p>
+	{% highlight scss %}
+		//scaffold
+		@import "scaffold/all_files_inside_this_folder";
+		@import "all_library_stylesheets";
+
+		//global_components
+		@import "global_components/all_files_inside_this_folder";
+
+		//global_layout_components
+		@import "global_layout_components/all_files_inside_this_folder";
+
+		//views
+		@import "views/all_files_inside_this_folder";
+
+		//mobile
+		@import "mobile/all_files_inside_this_folder";
+
+	{% endhighlight %}
 </div>
 
-{% highlight scss %}
-//Old Files
-@import "contact";
-{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
