@@ -111,6 +111,9 @@ a:hover {
   transition: all ease-in-out .2s;
   -webkit-transition: all ease-in-out .2s;
 }
+.secondary-nav li:hover {
+  border-right-color: #5E95C7;
+}
 .secondary-nav a {
   color: #999999;
   display: inline-block;
@@ -124,8 +127,8 @@ a:hover {
   color: #5E95C7;
 }
 .secondary-nav a:hover {
+  color: #5E95C7;
   text-decoration: none;
-  border-right-color: #5E95C7;
 }
 .partial-block {
   padding-top: 20px;
