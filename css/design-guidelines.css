@@ -105,17 +105,17 @@ a:hover {
   line-height: 2.7em;
   width: 150px;
   text-align: right;
-}
-.secondary-nav a {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
   padding-right: 15px;
   border-right: 2px solid transparent;
   transition: all ease-in-out .2s;
   -webkit-transition: all ease-in-out .2s;
 }
-.secondary-nav .active a {
+.secondary-nav a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.secondary-nav .active {
   color: #5E95C7;
   border-right-color: #5E95C7;
 }
