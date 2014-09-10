@@ -110,6 +110,8 @@ a:hover {
   display: inline-block;
   height: 100%;
   width: 100%;
+  transition: all ease-in-out .2s;
+  -webkit-transition: all ease-in-out .2s;
 }
 .secondary-nav a:hover {
   text-decoration: none;
