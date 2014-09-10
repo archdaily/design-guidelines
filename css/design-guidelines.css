@@ -101,6 +101,9 @@ a:hover {
   font-size: 15px;
   line-height: 1.7em;
 }
+.partial-block {
+  margin-bottom: 80px;
+}
 
 /*************************   COLORS   ****************************/
 .color-box {
