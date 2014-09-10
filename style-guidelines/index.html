@@ -7,11 +7,11 @@ categories: jekyll update
 
 
 <ul class="secondary-nav">
-  <li class="nav-item"><a href="#colors">Colors</a></li>
-  <li class="nav-item"><a href="#fonts">Fonts</a></li>
-  <li class="nav-item"><a href="#buttons">Buttons</a></li>
-  <li class="nav-item"><a href="#forms">Forms</a></li>
-  <li class="nav-item"><a href="#layout">Layout</a></li>
+  <li class="nav-item colors"><a href="#colors">Colors</a></li>
+  <li class="nav-item fonts"><a href="#fonts">Fonts</a></li>
+  <li class="nav-item buttons"><a href="#buttons">Buttons</a></li>
+  <li class="nav-item forms"><a href="#forms">Forms</a></li>
+  <li class="nav-item layout"><a href="#layout">Layout</a></li>
 </ul>
 
 
@@ -34,3 +34,34 @@ categories: jekyll update
 <div class="partial-block" id="layout">
 {% include layout.html %}
 </div>
+
+
+<script>
+if ($('#colors').visible(true)){ $('.colors').addClass('active'); }
+else { $('.colors').removeClass('active'); }
+
+if ($('#fonts').visible(true)){ $('.fonts').addClass('active'); }
+else { $('.fonts').removeClass('active'); }
+
+if ($('#buttons').visible(true)){ $('.buttons').addClass('active'); }
+else { $('.buttons').removeClass('active'); }
+
+if ($('#forms').visible(true)){ $('.forms').addClass('active'); }
+else { $('.forms').removeClass('active'); }
+
+if ($('#layout').visible(true)){ $('.layout').addClass('active'); }
+else { $('.layout').removeClass('active'); }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+

@@ -97,7 +97,7 @@ a:hover {
 .secondary-nav {
   position: fixed;
   top: 40%;
-  right: 30px;
+  right: 15px;
   margin-left: 0;
 }
 .secondary-nav li {
@@ -110,8 +110,14 @@ a:hover {
   display: inline-block;
   height: 100%;
   width: 100%;
+  padding-right: 15px;
+  border-right: 2px solid transparent;
   transition: all ease-in-out .2s;
   -webkit-transition: all ease-in-out .2s;
+}
+.secondary-nav .active a {
+  color: #5E95C7;
+  border-right-color: #5E95C7;
 }
 .secondary-nav a:hover {
   text-decoration: none;
