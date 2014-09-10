@@ -40,21 +40,26 @@ title:  "Images"
 	If you work on OS X use <a href="https://imageoptim.com/">ImageOptim</a> to remove junk metadata and unnecessary <a href="https://imageoptim.com/color-profiles.html">color profiles</a> from all the images you use.
 </div>
 
-<div class="section-box">
+<div class="section-box images-section">
 	<h3 class="title-section">1.3. Icons and sprites</h3>
 	<h4 class="title-secondary">1.3.1. Icons</h4>
-	<p>Take care of create icons with perfect shapes. Some times you create an icon where the shape dont have an exact with or height, or maybe you make a resize to a shape with an impar with or heigth, that create half pixels on the border of the shape. Obviously, half pixels can't be rendered on devices with a pixel ratio of 1. So, with that we have a new entire pixel on the border but with same color but with the half opacity. Avoid that!!!</p>
+	<p>Create icons with perfect shapes. Some times you create an icon where the shape dont have an exact with or height, or maybe you make a resize to a shape with an impar with or heigth, that create half pixels on the border of the shape. Obviously, half pixels can't be rendered on devices with a pixel ratio of 1. So, with that we have a new entire pixel on the border on the same color but with the half opacity. Avoid that!!!</p>
 	<img src="http://s3.amazonaws.com/newsroom001/dev_blog/pixel-perfect.png">
-	<p>Icons have to be saved on png format, with transparent background and with trimed on the border of the shape like the following image shows.</p>
+	<p>Icons have to be saved on png format, with transparent background and trimed on the border of the shape like the following image shows.</p>
 	<img src="http://s3.amazonaws.com/newsroom001/dev_blog/icons-trim.png">
-	<p>Create first a image on the double size to retina devises display and then resize it to the half. You will need both files.</p>
+	<p>Create first a image on the double size to retina devises display and then resize it to the half. Prefair pair numbers to the width and height. Save both icons, you will need them.</p>
 	<img src="http://s3.amazonaws.com/newsroom001/dev_blog/retina-icons.png">
 	
-	<h4 class="title-secondary">1.3.2. Pixel perfect</h4>
-	<p></p>
 	<h4 class="title-secondary">1.3.3. Icons files place</h4>
-	<p></p>
+	<p>On the <code>app/assets/images/</code> folder create two folders: <code>icons/</code> and <code>icons-retina/</code>to save your 1x and 2x icons.</p>
+	<p>Naming 1x icons:</p>
+	<p><code>icon-name.png</code></p>
+	<p>Naming 2x icons:</p>
+	<p><code>icon-name_2x.png</code></p>
+	<p>Use hyphen ("-") to separate the words on the file name. Use the same name to the 1x and 2x files. On the 2x file add at the end of the name and before the extension the suffix "_2x".</p>
+	<p>We use the underscore ("_2x") instead the arroba ("@2x") to naming the retina images to don't have problems with this character on the automatic generation of the sprites.</p>
 	<h4 class="title-secondary">1.3.3. Sprites</h4>
+	Th
 	<p></p>
 </div>
 
