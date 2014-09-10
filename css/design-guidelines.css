@@ -95,13 +95,28 @@ a:hover {
   list-style: none;
 }
 .secondary-nav {
-  margin-bottom: 30px;
+  position: fixed;
+  top: 240px;
+  left: 30px;
+  margin-left: 0;
 }
 .secondary-nav li {
+  display: block;
   font-size: 15px;
-  line-height: 1.7em;
+  line-height: 2.3em;
+  border-bottom: 1px solid #eee;
+  width: 150px;
+}
+.secondary-nav a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.secondary-nav a:hover {
+  text-decoration: none;
 }
 .partial-block {
+  padding-top: 20px;
   margin-bottom: 80px;
 }
 
