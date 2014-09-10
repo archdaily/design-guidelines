@@ -96,16 +96,15 @@ a:hover {
 }
 .secondary-nav {
   position: fixed;
-  top: 240px;
-  left: 30px;
+  top: 40%;
+  right: 30px;
   margin-left: 0;
 }
 .secondary-nav li {
   display: block;
-  font-size: 15px;
-  line-height: 2.3em;
-  border-bottom: 1px solid #eee;
+  line-height: 2.7em;
   width: 150px;
+  text-align: right;
 }
 .secondary-nav a {
   display: inline-block;
