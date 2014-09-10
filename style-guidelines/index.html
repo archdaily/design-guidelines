@@ -37,21 +37,23 @@ categories: jekyll update
 
 
 <script>
-$(window).scroll(function(){
-	if ($('#colors').visible(true)){ $('.colors').addClass('active'); }
-	else { $('.colors').removeClass('active'); }
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if ($('#colors').visible(true)){ $('.colors').addClass('active'); }
+		else { $('.colors').removeClass('active'); }
 
-	if ($('#fonts').visible(true)){ $('.fonts').addClass('active'); }
-	else { $('.fonts').removeClass('active'); }
+		if ($('#fonts').visible(true)){ $('.fonts').addClass('active'); }
+		else { $('.fonts').removeClass('active'); }
 
-	if ($('#buttons').visible(true)){ $('.buttons').addClass('active'); }
-	else { $('.buttons').removeClass('active'); }
+		if ($('#buttons').visible(true)){ $('.buttons').addClass('active'); }
+		else { $('.buttons').removeClass('active'); }
 
-	if ($('#forms').visible(true)){ $('.forms').addClass('active'); }
-	else { $('.forms').removeClass('active'); }
+		if ($('#forms').visible(true)){ $('.forms').addClass('active'); }
+		else { $('.forms').removeClass('active'); }
 
-	if ($('#layout').visible(true)){ $('.layout').addClass('active'); }
-	else { $('.layout').removeClass('active'); }
+		if ($('#layout').visible(true)){ $('.layout').addClass('active'); }
+		else { $('.layout').removeClass('active'); }
+	});
 });
 </script>
 
