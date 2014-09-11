@@ -6,10 +6,10 @@ title:  "Images"
 <div class="section-box images-section">
 	<h3 class="title-section">1.1. Format</h3>
 	<h4 class="title-secondary">1.1.1. JPG</h4>
-	<p>Images with complex gradients as a portrait or a landscape have a better compression on this format. To have a perseption of faster launch of the image use progressive compression and save the images with a quality between 70% and 90% trying to don't lose color richness.</p>
+	<p>Images with complex gradients as a portrait or a landscape have a better compression on this format. To have a perseption of faster launch of the image use progressive compression and save the images with a quality between 70% and 90% trying to don't lose color richness. Here you can <a href="http://www.yuiblog.com/blog/2008/12/05/imageopt-4/">learn more about progressive compression</a></p>
 	<ul class="specs-ul">
 		<li><strong>Format: </strong>JPG</li>
-		<li><strong>Compression: </strong>Progressive</li>
+		<li><strong>Compression: </strong>If the image size is bigger than 10k: Progressive</li>
 		<li><strong>Quality: </strong>70% - 90%</li>
 		<li><strong>Usage: </strong>Complex bitmaps</li>
 	</ul>
@@ -37,7 +37,8 @@ title:  "Images"
 
 <div class="section-box">
 	<h3 class="title-section">1.2. Optimization</h3>
-	If you work on OS X use <a href="https://imageoptim.com/">ImageOptim</a> to remove junk metadata and unnecessary <a href="https://imageoptim.com/color-profiles.html">color profiles</a> from all the images you use.
+	<p>If you work on OS X use <a href="https://imageoptim.com/">ImageOptim</a> to remove junk metadata and unnecessary <a href="https://imageoptim.com/color-profiles.html">color profiles</a> from all the images you use.</p>
+	<h3 class="title-section"><a href="http://www.html5rocks.com/en/tutorials/speed/img-compression/">Learn more about img compression »</a></h3>
 </div>
 
 <div class="section-box images-section">
@@ -58,9 +59,21 @@ title:  "Images"
 	<p><code>icon-name_2x.png</code></p>
 	<p>Use hyphen ("-") to separate the words on the file name. Use the same name to the 1x and 2x files. On the 2x file add at the end of the name and before the extension the suffix "_2x".</p>
 	<p>We use the underscore ("_2x") instead the arroba ("@2x") to naming the retina images to don't have problems with this character on the automatic generation of the sprites.</p>
+
 	<h4 class="title-secondary">1.3.3. Sprites</h4>
-	Th
-	<p></p>
+	<p>We use <a href="http://compass-style.org/">Compass sprites</a> to our sprites. At first we have to add the variables to our <code>_variables.css.scss</code> file.</p>
+
+{% highlight scss %}
+//The way of the sprite order the icons.
+$icons-layout: smart;
+
+//Find where are your icons to fit on the sprite
+$icons: sprite-map("icons/*.png");
+
+//Fin your retina icons
+$icons-retina: sprite-map("icons-retina/*.png");
+{% endhighlight %}
+
 </div>
 
 
