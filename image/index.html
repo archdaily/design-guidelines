@@ -61,18 +61,7 @@ title:  "Images"
 	<p>We use the underscore ("_2x") instead the arroba ("@2x") to naming the retina images to don't have problems with this character on the automatic generation of the sprites.</p>
 
 	<h4 class="title-secondary">1.3.3. Import Sprites</h4>
-	<p>We use <a href="http://compass-style.org/">Compass sprites</a> to our sprites. At first we have to add the variables to our <code>_variables.css.scss</code> file.</p>
-
-	<p>Import Compass Sprites to your <code>app/assets/stylesheets/application.css.scss</code> stylesheets on the <a href="http://archdaily.github.io/design-guidelines/assets/">scaffold section</a>, after <code>@import "scaffold/reset";</code> and <code>@import "scaffold/normalize"</code> imports.</p>
-
-{% highlight scss %}
-//Global ArchDaily scaffold
-@import "scaffold/reset";
-@import "scaffold/normalize";
-
-@import "compass";
-{% endhighlight %}
-
+	<p>We use <a href="http://compass-style.org/">Compass sprites</a> to our sprites, so, remember to add the <code>gem 'compass-rails'</code> to your Rails project before all. Add the variables to our <code>_variables.css.scss</code> file.</p>
 
 {% highlight scss %}
 //The way of the sprite order the icons.
@@ -85,8 +74,30 @@ $icons: sprite-map("icons/*.png");
 $icons-retina: sprite-map("icons-retina/*.png");
 {% endhighlight %}
 
-	<h4 class="title-secondary">1.3.3. Import Sprites</h4>
-	<p></p>
+	<p>Import Compass Sprites to your <code>app/assets/stylesheets/application.css.scss</code> stylesheets on the <a href="http://archdaily.github.io/design-guidelines/assets/">scaffold section</a>, after <code>@import "scaffold/reset";</code> and <code>@import "scaffold/normalize"</code> imports.</p>
+
+{% highlight scss %}
+//Global ArchDaily scaffold
+@import "scaffold/reset";
+@import "scaffold/normalize";
+
+@import "compass";
+{% endhighlight %}
+
+
+
+	<p>Add the following mixin to your <code>_mixins.css.scss</code> file. With these is so easy add the retina icons to your stylesheets.</p>
+{% highlight scss %}
+@mixin background-retina($file-name) {
+  background: $icons-retina; 
+  $ypos: round(nth(sprite-position($icons-retina, $file-name), 2) / 2);
+  background-position: 0 $ypos;
+  @include background-size((image-width(sprite-path($icons-retina))/2) (image-height(sprite-path($icons-retina))/2));
+  background-repeat: no-repeat;
+}
+{% endhighlight %}
+
+	<p>Add this js inside your <code>head</code> tag to add <code>class="retina"</code> to your <code>html</code> tag if you are visiting the site from a retina devise.</p>
 
 {% highlight js %}
 if (window.devicePixelRatio > 1) {
@@ -99,6 +110,22 @@ if (window.devicePixelRatio > 1) {
 }
 {% endhighlight %}
 
+	<p>Call from your css code your icons:</p>
+{% highlight scss %}
+//Call your icon ass background using your sprite
+.icon-twitter {
+ background: $icons;
+ @include sprite-dimensions($icons,file-name);
+ @include sprite-background-position($icons,file-name);
+ background-repeat: no-repeat;
+}
+//Add the retina background
+.retina .icon-twitter {
+ @include background-retina(file-name_2x);
+}
+{% endhighlight %}
+
+<p>And that's all :D</p>
 
 </div>
 
