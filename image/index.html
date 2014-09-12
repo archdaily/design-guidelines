@@ -5,7 +5,7 @@ title:  "Images"
 
 <div class="section-box images-section">
 	<h3 class="title-section">1.1. Format</h3>
-	<h4 class="title-secondary">1.1.1. JPG</h4>
+	<h4 class="title-primary">1.1.1. JPG</h4>
 	<p>Images with complex gradients as a portrait or a landscape have a better compression on this format. To have a perseption of faster launch of the image use progressive compression and save the images with a quality between 70% and 90% trying to don't lose color richness. Here you can <a href="http://www.yuiblog.com/blog/2008/12/05/imageopt-4/">learn more about progressive compression</a></p>
 	<ul class="specs-ul">
 		<li><strong>Format: </strong>JPG</li>
@@ -15,7 +15,7 @@ title:  "Images"
 	</ul>
 	<img src="http://ad009cdnb.archdaily.net/wp-content/uploads/2014/09/53fbe2a0c07a800962000805_delta-cabin-atot_10-125x125.jpg">
 
-	<h4 class="title-secondary">1.1.2. PNG</h4>
+	<h4 class="title-primary">1.1.2. PNG</h4>
 	<p>Your image have transparency? This is your format. Think on this especially to every icon or logo. This kind of assets have to work over any background color and this is the reason to use png 32 or png 24 to those images. Less colors, less bits and less weight. GIF also works fine with transparency and icons with basic colors, but dont save fine the gradients. PNG use interlaced save option to render with a progressive compression.</p>
 	<ul class="specs-ul">
 		<li><strong>Format: </strong>PNG</li>
@@ -24,7 +24,7 @@ title:  "Images"
 	</ul>
 	<img src="http://s3.amazonaws.com/newsroom001/myad/bookmark-sprite.png">
 	
-	<h4 class="title-secondary">1.1.3. GIF</h4>
+	<h4 class="title-primary">1.1.3. GIF</h4>
 	<p>Images with animations save it on GIF format. You have to be careful of the color quality.</p>
 	<ul class="specs-ul">
 		<li><strong>Format: </strong>GIF</li>
@@ -43,7 +43,7 @@ title:  "Images"
 
 <div class="section-box images-section">
 	<h3 class="title-section">1.3. Icons and sprites</h3>
-	<h4 class="title-secondary">1.3.1. Icons</h4>
+	<h4 class="title-primary">1.3.1. Icons</h4>
 	<p>Create icons with perfect shapes. Some times you create an icon where the shape dont have an exact with or height, or maybe you make a resize to a shape with an impar with or heigth, that create half pixels on the border of the shape. Obviously, half pixels can't be rendered on devices with a pixel ratio of 1. So, with that we have a new entire pixel on the border on the same color but with the half opacity. Avoid that!!!</p>
 	<img src="http://s3.amazonaws.com/newsroom001/dev_blog/pixel-perfect.png">
 	<p>Icons have to be saved on png format, with transparent background and trimed on the border of the shape like the following image shows.</p>
@@ -51,7 +51,7 @@ title:  "Images"
 	<p>Create first a image on the double size to retina devises display and then resize it to the half. Prefair pair numbers to the width and height. Save both icons, you will need them.</p>
 	<img src="http://s3.amazonaws.com/newsroom001/dev_blog/retina-icons.png">
 	
-	<h4 class="title-secondary">1.3.3. Icons files place</h4>
+	<h4 class="title-primary">1.3.3. Icons files place</h4>
 	<p>On the <code>app/assets/images/</code> folder create two folders: <code>icons/</code> and <code>icons-retina/</code>to save your 1x and 2x icons.</p>
 	<p>Naming 1x icons:</p>
 	<p><code>icon-name.png</code></p>
@@ -60,7 +60,7 @@ title:  "Images"
 	<p>Use hyphen ("-") to separate the words on the file name. Use the same name to the 1x and 2x files. On the 2x file add at the end of the name and before the extension the suffix "_2x".</p>
 	<p>We use the underscore ("_2x") instead the arroba ("@2x") to naming the retina images to don't have problems with this character on the automatic generation of the sprites.</p>
 
-	<h4 class="title-secondary">1.3.3. Import Sprites</h4>
+	<h4 class="title-primary">1.3.3. Import Sprites</h4>
 	<p>We use <a href="http://compass-style.org/">Compass sprites</a> to our sprites, so, remember to add the <code>gem 'compass-rails'</code> to your Rails project before all. Add the variables to our <code>_variables.css.scss</code> file.</p>
 
 {% highlight scss %}
@@ -111,6 +111,12 @@ if (window.devicePixelRatio > 1) {
 {% endhighlight %}
 
 	<p>Call from your css code your icons:</p>
+{% highlight html %}
+<!-- HTML code. Prefer <i> tag to icons -->
+<i class="icon-twitter"></i>
+{% endhighlight %}
+
+
 {% highlight scss %}
 //Call your icon ass background using your sprite
 .icon-twitter {
