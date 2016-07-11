@@ -27,7 +27,11 @@ body {
   line-height: 1.7em;
   padding: 25px 25px 0 285px;
 }
-
+pre {
+  font-family: monospace;
+  background: #f7f7f7;
+  white-space: pre-wrap;
+}
 /**********  NAVBAR  *****************/
 .nav {
   position: fixed;
