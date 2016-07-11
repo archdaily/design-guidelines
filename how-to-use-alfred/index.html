@@ -2,3 +2,50 @@
 layout: post
 title:  "How to use Alfred"
 ---
+
+
+<p>Alfred is a colection of endpoints with UI components to use in your application. There are endpoints with html, css and css and these are the aviables endpoints so far:</p>
+
+{% highlight ruby %}
+alfred.dyn.archdaily.com/#{site}/header?format=home // For the home header (logo inside an h1)
+alfred.dyn.archdaily.com/#{site}/header // For the complete header 
+alfred.dyn.archdaily.com/#{site}/header?format=only-nav // For the navigation bar alone
+alfred.dyn.archdaily.com/#{site}/header?format=contact-links // For the links that are at the end of the fixed sidebar
+alfred.dyn.archdaily.com/#{site}/footer // For the footer
+alfred.dyn.archdaily.com/alfred.css // For the styles
+alfred.dyn.archdaily.com/alfred.js // For the javascripts
+{% endhighlight %}
+
+<p>To use those components in your app you have to paste them in your code as raw. In Ruby on Rails we do this instantiating the endpoints as a variable in our Application Controller. Something similar like this:</p>
+
+{% highlight ruby %}
+
+before_action :load_afd
+
+def load_afd
+  @afd_header = open("alfred.dyn.archdaily.com/#{site}/header").read
+end
+
+{% endhighlight %}
+
+<p>Then you can put your variable wherever you whant to use the code</p>
+
+{% highlight erb %}
+<!-- To paste HTML -->
+<%= raw @afd_header %>
+{% endhighlight %}
+
+{% highlight erb %}
+<!-- To paste CSS. We prefere to paste the styles raw inside the head to minimize the number of requests and get a faster render and painting of the layout. Plus, you need to force the encoding. -->
+<style>
+  <%= raw(@afd_css.force_encoding('utf-8')) %>
+</style>
+{% endhighlight %}
+
+{% highlight js %}
+<!-- To paste JavaScript. Like in CSS, we put it raw in the code, but at the end of the document to avoid blocking the render. Here we force the encoding too. -->
+<script>
+  <%= raw(@afd_js.force_encoding('utf-8')) %>
+</script>
+{% endhighlight %}
+
