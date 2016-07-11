@@ -7,13 +7,15 @@ title:  "How to use Alfred"
 <p>Alfred is a colection of endpoints with UI components to use in your application. There are endpoints with html, css and css and these are the aviables endpoints so far:</p>
 
 {% highlight ruby %}
-"http://alfred.dyn.archdaily.com/#{site}/header?format=home" // For the home header (logo inside an h1)
-"http://alfred.dyn.archdaily.com/#{site}/header" // For the complete header 
-"http://alfred.dyn.archdaily.com/#{site}/header?format=only-nav" // For the navigation bar alone
-"http://alfred.dyn.archdaily.com/#{site}/header?format=contact-links" // For the links that are at the end of the fixed sidebar
-"http://alfred.dyn.archdaily.com/#{site}/footer" // For the footer
-"http://alfred.dyn.archdaily.com/alfred.css" // For the styles
-"http://alfred.dyn.archdaily.com/alfred.js" // For the javascripts
+"http://alfred.dyn.archdaily.com/#{site}/header?format=home" # For the home header (logo inside an h1)
+"http://alfred.dyn.archdaily.com/#{site}/header" # For the complete header 
+"http://alfred.dyn.archdaily.com/#{site}/header?format=only-nav" # For the navigation bar alone
+"http://alfred.dyn.archdaily.com/#{site}/header?format=nft" # With the NFT search aviable
+"http://alfred.dyn.archdaily.com/#{site}/header?format=contact-links" # For the links that are at the end of the fixed sidebar
+"http://alfred.dyn.archdaily.com/#{site}/footer?format=clean" # For the footer without partners carousel
+"http://alfred.dyn.archdaily.com/#{site}/footer" # For the footer
+"http://alfred.dyn.archdaily.com/alfred.css" # For the styles
+"http://alfred.dyn.archdaily.com/alfred.js" # For the javascripts
 {% endhighlight %}
 
 <p>To use those components in your app you have to paste them in your code as raw. In Ruby on Rails we do this instantiating the endpoints as a variable in our Application Controller. Something similar like this:</p>
