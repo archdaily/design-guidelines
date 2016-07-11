@@ -42,7 +42,7 @@ end
 </style>
 {% endhighlight %}
 
-{% highlight js %}
+{% highlight erb %}
 <!-- To paste JavaScript. Like in CSS, we put it raw in the code, but at the end of the document to avoid blocking the render. Here we force the encoding too. -->
 <script>
   <%= raw(@afd_js.force_encoding('utf-8')) %>
