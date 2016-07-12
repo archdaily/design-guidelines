@@ -3,11 +3,106 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<h1 class="title-article">ArchDaily styles guidelines and Alfred usage</h1>
+
+<h3 class="title-section">CSS guides</h3>
+
+<p>Our stylesheets are writed mainly based on <a href="http://cssguidelin.es/" target="blank">this css guidelines</a>, but there are five core principes thtat you don't have to ignore if you are styling for ArchDaily</p>
+
+<ul>
+  <li>1. One file for each component</li>
+  <li>2. Name classes using BEM</li>
+  <li>3. Never style html tags and avoid style IDs. Use only classes</li>
+  <li>4. Avoid indentate css selectors</li>
+  <li>5. Write clear code, someone else will have to deal with it</li>
+</ul>
+<div class="afd-separator"></div>
+
+  
+<h3 class="title-section">1. One file for each component</h3>
+<p>The title says everything. If you have to style a new commponent create a new file. It helps to make easyer to debug and the edit. If this component is going to be deprecated in the future you won't have problems cleaning the styles</p>
+
+
+<h3 class="title-section">2. Name classes using BEM</h3>
+<p>Naming using <a href="https://en.bem.info/" target="blank">BEM</a> is not rocket science. Each UI component is a block and every thing inside it is an element. Of course, blocks and elements can be modifies and it means to add them a modifyer class</b>
+<p>A block has a name with the words separates by single dashes:</p>
+{% highlight html %}
+<ul class="your-block-list">
+</ul>
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+<p>The elements names starts with the same name than the block that belongs, but then you have to add a double underscore and then the element name. If the element name is composed by two or more words separate these by single dashes:</p>
+{% highlight html %}
+<ul class="your-block-list">
+  <li class="your-block-list__element-item"></li>
+  <li class="your-block-list__element-item"></li>
+</ul>
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+<p>If you whant to add modifycations to blocks or elements, just repeat the class name and at the end add a double dash and the name of the modification:</p>
+{% highlight html %}
+<ul class="your-block-list your-block-list--block-in-other-color">
+  <li class="your-block-list__element-item your-block-list__element-item--element-modifyed"></li>
+  <li class="your-block-list__element-item"></li>
+</ul>
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+
+<h3 class="title-section">3. Never style html tags and avoid style IDs. Use only classes</h3>
+<p>That's it! The experience tell us that it allways could cause style colisions, a nigthmare debuging, fixing and styling other components. Don't do it, we have made too much mistakes with it and we have to learn. If you use good BEM you don't need to style tags or IDs</p>
+
+
+<h3 class="title-section">4. Avoid indentate css selectors</h3>
+<p>This could make conflicts of inheritance with the styles and make slower the process that the machine make of the styles. If you are using SCSS probably could think that it is awesome, but is not. In fact you are under risk of to get terrible compilated selectors. Once again, if you use good BEM you don't need to style with nested selectors.</p>
+
+
+<h3 class="title-section">5. Write clear code, someone else will have to deal with it</h3>
+<p>This could be relative, but here are a few practices that are helping us to make it clear.</p>
+
+{% highlight scss %}
+// Coment your code:
+
+// Header
+.header {
+  font-size: 2em;
+}
+{% endhighlight %}
+
+{% highlight scss %}
+// If you indent, leave a space before:
+
+// Header
+.header {
+  font-size: 2em;
+
+  &:hover {
+    background: red;
+  }
+}
+{% endhighlight %}
+
+{% highlight scss %}
+.title { font-size: 2em; } // Don't style in one line
+
+// Style in multiline
+.title {
+  font-size: 2em;
+}
+// ...and don't forget the space after the class name and after the rule
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+
