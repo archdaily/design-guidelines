@@ -6,51 +6,47 @@ title:  "Alfred files structure"
 <div class="section-box">
 	<h3 class="title-section">1. Files structure</h3>
 	<p>
-		This is the structure to the styles files. There are four principal folders with files that can find on any application: Scaffold, global_components, global_layout_components and mobile. Views is the folder reserved to the styles used only on the current application. Inside the mobile folder we placed the mobile styles for all the components, including the views files.
+		There are two main folders. The first one contains the framework with components that are documented in this site. Those components are generic UI units only with structural styles to be used in any place. Inside the framework lives a scaffold to setup the styles of each aplication.
+	</p>
+	<p>
+		The second one is a folder with specific components of our applications with complete styles. For example, the different versions of header, footer, breadcrumbs, etc.
 	</p>
 	<ul class="specs-ul folders-tree">
 		<li class="folder">.assets/</li>
 		<li class="folder level-1">stylesheets/</li>
+
 		<li class="level-2">└─ application.css.scss</li>
-		<li class="folder level-2">└─ scaffold/</li>
-		<li class="level-3">└─ _reset.css.scss</li>
-		<li class="level-3">└─ _normalize.css.scss</li>
-		<li class="level-3">└─ _variables.css.scss</li>
-		<li class="level-3">└─ _mixins.css.scss</li>
-		<li class="level-3">└─ _layout.css.scss</li>
 
-		<li class="folder level-2">└─ global_components/</li>
-		<li class="level-3">└─ _typography.css.scss</li>
-		<li class="level-3">└─ _images.css.scss</li>
-		<li class="level-3">└─ _buttons.css.scss</li>
-		<li class="level-3">└─ _forms.css.scss</li>
-		<li class="level-3">└─ _tables.css.scss</li>
-		<li class="level-3">└─ _thumbnails.css.scss</li>
-		<li class="level-3">└─ _articles_nav.css.scss</li>
+		<li class="folder level-2">└─ commponents/</li>
+		<li class="level-3">└─ _flyouts.css.scss</li>
+		<li class="level-3">└─ breadcrumbs.css.scss</li>
+		<li class="level-3">└─ footer.css.scss</li>
+		<li class="level-3">└─ header.css.scss</li>
+		<li class="level-3">└─ navigation.css.scss</li>
+		<li class="level-3">└─ navigation_mobile.css.scss</li>
+		<li class="level-3">└─ search.css.scss</li>
+
+		<li class="folder level-2">└─ framework/</li>
 		<li class="level-3">└─ _modals.css.scss</li>
-		<li class="level-3">└─ _pagination.css.scss</li>
-		<li class="level-3">└─ _widgets.css.scss</li>
+		<li class="level-3">└─ _buttons.css.scss</li>
+		<li class="level-3">└─ _grids.css.scss</li>
+		<li class="level-3">└─ _selects.css.scss</li>
+		<li class="level-3">└─ _tables.css.scss</li>
+		<li class="level-3">└─ _textfields.css.scss</li>
+		<li class="level-3">└─ _thumbnails.css.scss</li>
+		<li class="level-3">└─ _typography.css.scss</li>
 
-		<li class="folder level-2">└─ global_layout_components/</li>
-		<li class="level-3">└─ _top_bar.css.scss</li>
-		<li class="level-3">└─ _navigation.css.scss</li>
-		<li class="level-3">└─ _footer.css.scss</li>
-		<li class="level-3">└─ _header.css.scss</li>
-		<li class="level-3">└─ _mobile_navigation.css.scss</li>
-
-		<li class="folder level-2">└─ mobile/</li>
-		<li class="folder level-3">└─ global_components/</li>
-		<li class="folder level-3">└─ global_layout_components/</li>
-		<li class="folder level-3">└─ views/</li>
-
-		<li class="folder level-2">└─ views/</li>
-		<li class="hint-color level-3">└─ /* Here all the views styles for this particular application */</li>
+		<li class="folder level-3">└─ scaffold/</li>
+		<li class="level-4">└─ _layout.css.scss</li>
+		<li class="level-4">└─ _mixins.css.scss</li>
+		<li class="level-4">└─ _variables.css.scss</li>
+		<li class="level-4">└─ _reset.css.scss</li>
 
 	</ul>
 </div>
 
 <div class="section-box">
-	<h3 class="title-section">1. Files importation</h3>
+	<h3 class="title-section">1. Files import</h3>
 	<p>
 		Here is the order to import the stylesheets inside the <code>application.css.scss</code> file.
 	</p>
@@ -63,21 +59,21 @@ title:  "Alfred files structure"
  *= require_self
  */
 
-//scaffold
-@import "scaffold/all_files_inside_this_folder";
-@import "all_library_stylesheets";
+@import "framework/scaffold/reset";
+@import "framework/scaffold/layout";
+@import "compass";
 
-//global_components
-@import "global_components/all_files_inside_this_folder";
+@import "framework/grids";
+@import "framework/typography";
+@import "framework/selects";
 
-//global_layout_components
-@import "global_layout_components/all_files_inside_this_folder";
-
-//views
-@import "views/all_files_inside_this_folder";
-
-//mobile
-@import "mobile/all_files_inside_this_folder";
+@import "components/header";
+@import "components/navigation";
+@import "components/navigation_mobile";
+@import "components/flyouts";
+@import "components/breadcrumbs";
+@import "components/search";
+@import "components/footer";
 
 {% endhighlight %}
 </div>
