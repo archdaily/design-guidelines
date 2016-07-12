@@ -7,7 +7,7 @@ title: Your New Jekyll Site
 
 <h3 class="title-section">CSS guides</h3>
 
-<p>Our stylesheets are writed mainly based on <a href="http://cssguidelin.es/" target="blank">this css guidelines</a>, but there are five core principes thtat you don't have to ignore if you are styling for ArchDaily</p>
+<p>Our stylesheets are writed mainly based on <a href="http://cssguidelin.es/" target="blank">this css guidelines</a>, but there are six core principes thtat you don't have to ignore if you are styling for ArchDaily</p>
 
 <ul>
   <li>1. One file for each component</li>
@@ -15,6 +15,7 @@ title: Your New Jekyll Site
   <li>3. Never style html tags and avoid style IDs. Use only classes</li>
   <li>4. Avoid indentate css selectors</li>
   <li>5. Write clear code, someone else will have to deal with it</li>
+  <li>6. Name always from the general to the particular</li>
 </ul>
 <div class="afd-separator"></div>
 
@@ -95,9 +96,17 @@ title: Your New Jekyll Site
 {% endhighlight %}
 
 
+<div class="afd-separator"></div>
 
 
+<h3 class="title-section">6. Name always from the general to the particular</h3>
+<p>This is a rule for class names and variables names mainly. The reason is to make easyer the reading of them.</p>
 
+{% highlight scss %}
+// Don't do this:
+.red-text {}
+.blue-text
+{% endhighlight %}
 
 
 
