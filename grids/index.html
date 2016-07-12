@@ -4,7 +4,20 @@ title:  "Grids"
 ---
 
 
+<p>Our grid system is composed by a container with the class ".afd-grids" and inside it each column has two classes: One generic that is called ".afd-grids__col" and other one that indicate us what fraction of the width is going to be filled by the column. To naming it we use a BEM modiffier with a fraction (eg: .afd-grids__col--1-2 for half of total width), changing the slash (/) of the fraction by a dash (-). Here is an example of the markup:</p>
+
+{% highlight html %}
+
+<div class="afd-grid">
+  <div class="afd-grid__col afd-grid__col--1-2">One half</div>
+  <div class="afd-grid__col afd-grid__col--1-2">The other half</div>
+</div>
+
+{% endhighlight %}
+
 <div class="afd-grids-examples">
+  <h3>Here you have a visual example:</h3>
+
   <div class="afd-grid">
     <div class="afd-grid__col afd-grid__col--1-1">.afd-grid__col--1-1 (1/1)</div>
   </div>
@@ -34,12 +47,28 @@ title:  "Grids"
     <div class="afd-grid__col afd-grid__col--2-5">.afd-grid__col--2-5 (2/5)</div>
     <div class="afd-grid__col afd-grid__col--3-5">.afd-grid__col--3-5 (3/5)</div>
   </div>
+</div>
 
-  <h3>Nested grids:</h3>
+<div class="afd-separator"></div>
 
+<h2 class="title-primary">Nested grids</h2>
+<p>Also you can nested a grid inside another one and the following code shows you an example of it</p>
+
+{% highlight html %}
+  <div class="afd-grid">
+    <div class="afd-grid__col afd-grid__col--2-5">Two fifths</div>
+    <div class="afd-grid__col afd-grid__col--3-5 afd-grid">
+      <div class="afd-grid__col afd-grid__col--1-2">One half</div>
+      <div class="afd-grid__col afd-grid__col--1-2">One half</div>
+    </div>
+  </div>
+{% endhighlight %}
+
+<div class="afd-grids-examples">
+  <h3>Visual example of nested grids:</h3>
   <div class="afd-grid">
     <div class="afd-grid__col afd-grid__col--2-5">.afd-grid__col--2-5 (2/5)</div>
-    <div class="afd-grid__col afd-grid__col--3-5 afd-nested-grid">
+    <div class="afd-grid__col afd-grid__col--3-5 afd-grid afd-nested-grid">
       <div class="afd-grid__col afd-grid__col--1-2">.afd-grid__col--1-2 (1/2)</div>
       <div class="afd-grid__col afd-grid__col--1-2">.afd-grid__col--1-2 (1/2)</div>
     </div>

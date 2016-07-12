@@ -385,7 +385,10 @@ input[type="submit"]:hover {
     width: 100% !important;
   }
 }
-
+.afd-separator {
+  display: block;
+  height: 50px;
+}
 
 
 
