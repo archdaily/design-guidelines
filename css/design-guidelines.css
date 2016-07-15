@@ -389,7 +389,7 @@ input[type="submit"]:hover {
   display: block;
   height: 50px;
 }
-
+/**************  SELECTS  **********************/
 .afd-selectfield {
   position: relative;
   min-height: 2.5em;
@@ -423,6 +423,44 @@ input[type="submit"]:hover {
   border-top-color: #999;
 }
 
+/**************  INPUTS TEXTAREAS  **********************/
+.afd-textfield {
+  position: relative;
+  margin-bottom: 1.4em;
+}
+.afd-textfield__input,
+.afd-textfield__textarea {
+  font-size: inherit;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.55em .8em;
+  vertical-align: middle;
+  border: 1px solid #e1e1e1;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.afd-textfield__textarea {
+  min-height: 175px;
+  line-height: 1.5em;
+}
+.afd-textfield__input {
+  min-height: 2.5em;
+}
+.afd-textfield__label {
+  display: block;
+  font-size: .85rem;
+  margin-bottom: .4em;
+  font-weight: bolder;
+}
+.afd-textfield__input:hover,
+.afd-textfield__textarea:hover {
+  border-color: #bbbbbb;
+}
 
-
+.afd-textfield__input:focus,
+.afd-textfield__textarea:focus {
+  border-color: #303030;
+}
 

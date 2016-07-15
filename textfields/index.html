@@ -2,3 +2,36 @@
 layout: post
 title:  "Textfields"
 ---
+
+<p>With those clases you can assign appearence to textareas and inputs. First, you have to wrap the input or textarea with a div with the class ".afd-textfield". Then, if you are giving style to an input, add the class ".afd-textfield__input" to it. And if you are dealing with a textarea use the class ".afd-textfield__textarea"</p>
+<p>To add labels, put them before the input or textarea and inside the wrapper and add to it the class ".afd-textfield__label"<p>
+
+<h2 class="title-primary">Inputs</h2>
+
+<p>Here is the code example</p>
+<div class="afd-textfield">
+  <label class="afd-textfield__label">Label</label>
+  <input type="text" class="afd-textfield__input">
+</div>
+{% highlight html %}
+  <div class="afd-textfield">
+    <label class="afd-textfield__label">Label</label>
+    <input type="text" class="afd-textfield__input">
+  </div>
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+
+
+<h2 class="title-primary">Textarea</h2>
+<div class="afd-textfield">
+  <label class="afd-textfield__label">Label</label>
+  <textarea type="text" class="afd-textfield__textarea"></textarea>
+</div>
+<p>Here is the code example</p>
+{% highlight html %}
+  <div class="afd-textfield">
+    <label class="afd-textfield__label">Label</label>
+    <textarea type="text" class="afd-textfield__textarea">
+  </div>
+{% endhighlight %}
