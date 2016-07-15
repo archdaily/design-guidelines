@@ -11,6 +11,9 @@ title:  "Alfred files structure"
 	<p>
 		The second one is a folder with specific components of our applications with complete styles. For example, the different versions of header, footer, breadcrumbs, etc.
 	</p>
+	<p>
+		Each of these folders have a floder with the mobile styles separated for each commponent. It keeps the files cleaner, make easyer the thebuging and allow us to import these styles at the end of all styles. 
+	</p>
 	<ul class="specs-ul folders-tree">
 		<li class="folder">.assets/</li>
 		<li class="folder level-1">stylesheets/</li>
@@ -18,29 +21,37 @@ title:  "Alfred files structure"
 		<li class="level-2">└─ application.css.scss</li>
 
 		<li class="folder level-2">└─ commponents/</li>
-		<li class="level-3">└─ _flyouts.css.scss</li>
-		<li class="level-3">└─ breadcrumbs.css.scss</li>
-		<li class="level-3">└─ footer.css.scss</li>
-		<li class="level-3">└─ header.css.scss</li>
-		<li class="level-3">└─ navigation.css.scss</li>
-		<li class="level-3">└─ navigation_mobile.css.scss</li>
-		<li class="level-3">└─ search.css.scss</li>
+			<li class="folder level-3">└─ mobile/</li>
+				<li class="level-4">└─ _mobile_header.css.scss</li>
+				<li class="level-4">└─ _mobile_navigation.css.scss</li>
+				<li class="level-4">└─ _mobile_search.css.scss</li>
+			<li class="level-3">└─ _flyouts.css.scss</li>
+			<li class="level-3">└─ breadcrumbs.css.scss</li>
+			<li class="level-3">└─ footer.css.scss</li>
+			<li class="level-3">└─ header.css.scss</li>
+			<li class="level-3">└─ navigation.css.scss</li>
+			<li class="level-3">└─ navigation_mobile.css.scss</li>
+			<li class="level-3">└─ search.css.scss</li>
 
 		<li class="folder level-2">└─ framework/</li>
-		<li class="level-3">└─ _modals.css.scss</li>
-		<li class="level-3">└─ _buttons.css.scss</li>
-		<li class="level-3">└─ _grids.css.scss</li>
-		<li class="level-3">└─ _selects.css.scss</li>
-		<li class="level-3">└─ _tables.css.scss</li>
-		<li class="level-3">└─ _textfields.css.scss</li>
-		<li class="level-3">└─ _thumbnails.css.scss</li>
-		<li class="level-3">└─ _typography.css.scss</li>
+			<li class="folder level-3">└─ mobile/</li>
+				<li class="level-4">└─ _mobile_grids.css.scss</li>
+				<li class="level-4">└─ _mobile_typography.css.scss</li>
+				<li class="level-4">└─ _mobile_layout.css.scss</li>
+			<li class="level-3">└─ _modals.css.scss</li>
+			<li class="level-3">└─ _buttons.css.scss</li>
+			<li class="level-3">└─ _grids.css.scss</li>
+			<li class="level-3">└─ _selects.css.scss</li>
+			<li class="level-3">└─ _tables.css.scss</li>
+			<li class="level-3">└─ _textfields.css.scss</li>
+			<li class="level-3">└─ _thumbnails.css.scss</li>
+			<li class="level-3">└─ _typography.css.scss</li>
 
-		<li class="folder level-3">└─ scaffold/</li>
-		<li class="level-4">└─ _layout.css.scss</li>
-		<li class="level-4">└─ _mixins.css.scss</li>
-		<li class="level-4">└─ _variables.css.scss</li>
-		<li class="level-4">└─ _reset.css.scss</li>
+			<li class="folder level-3">└─ scaffold/</li>
+				<li class="level-4">└─ _layout.css.scss</li>
+				<li class="level-4">└─ _mixins.css.scss</li>
+				<li class="level-4">└─ _variables.css.scss</li>
+				<li class="level-4">└─ _reset.css.scss</li>
 
 	</ul>
 </div>
