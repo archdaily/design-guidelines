@@ -20,7 +20,7 @@ title: ArchDaily styles guidelines and Alfred usage
 
   
 <h3 class="title-section">1. One file for each component</h3>
-<p>The title says everything. If you have to style a new commponent create a new file. It helps to make easyer to debug and the edit. If this component is going to be deprecated in the future you won't have problems cleaning the styles</p>
+<p>The title says everything. If you have to style a new commponent create a new file. It helps to make easyer edit and debug. If this component is going to be deprecated in the future you won't have problems cleaning the styles</p>
 
 
 <h3 class="title-section">2. Name classes using BEM</h3>
@@ -32,7 +32,7 @@ title: ArchDaily styles guidelines and Alfred usage
 {% endhighlight %}
 <div class="afd-separator"></div>
 
-<p>The elements names starts with the same name than the block that belongs, but then you have to add a double underscore and then the element name. If the element name is composed by two or more words separate these by single dashes:</p>
+<p>The elements names starts with the same name than the block that belongs, but then you have to add a double underscore and then the element name. If the element name is composed by two or more words separate these ones by single dashes:</p>
 {% highlight html %}
 <ul class="your-block-list">
   <li class="your-block-list__element-item"></li>
@@ -56,14 +56,14 @@ title: ArchDaily styles guidelines and Alfred usage
 
 
 <h3 class="title-section">4. Avoid indentate css selectors</h3>
-<p>This could make conflicts of inheritance with the styles and make slower the process that the machine make of the styles. If you are using SCSS probably could think that it is awesome, but is not. In fact you are under risk of to get terrible compilated selectors. Once again, if you use good BEM you don't need to style with nested selectors.</p>
+<p>This could make conflicts of inheritance with the styles and make slower the process that the machines read and apply the styles. If you are using SCSS probably could think that it is awesome, but is not. In fact you are under the risk of get terrible compilated selectors. Once again, if you use good BEM you don't need to style with nested selectors.</p>
 
 
 <h3 class="title-section">5. Write clear code, someone else will have to deal with it</h3>
 <p>This could be relative, but here are a few practices that are helping us to make it clear.</p>
 
 {% highlight scss %}
-// Coment your code:
+// Coment your code and tell the other devs what are you styleing:
 
 // Header
 .header {
@@ -72,7 +72,7 @@ title: ArchDaily styles guidelines and Alfred usage
 {% endhighlight %}
 
 {% highlight scss %}
-// If you indent, leave a space before:
+// If you indent, line before the rule:
 
 // Header
 .header {
@@ -85,13 +85,13 @@ title: ArchDaily styles guidelines and Alfred usage
 {% endhighlight %}
 
 {% highlight scss %}
-.title { font-size: 2em; } // Don't style in one line
+.title { font-size: 2em; } // Don't style in one single line
 
 // Style in multiline
 .title {
   font-size: 2em;
 }
-// ...and don't forget the space after the class name and after the rule
+// and don't forget the space after the class name and after the rule
 {% endhighlight %}
 
 
