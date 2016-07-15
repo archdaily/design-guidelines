@@ -2,3 +2,32 @@
 layout: post
 title:  "Selects"
 ---
+
+<p>Selects are one of the most complicated components to give styles, but here we have an easy way to standarice the appearance of them with just three steps:</p>
+<ul>
+  <li>1. You have to wrap the select with a div with the class ".afd-selectfield"</li>
+  <li>2. Add to the select the class ".afd-selectfield__select"</li>
+  <li>3. After the select, inside the wrapper, add a span with the class ".afd-selectfield__caret" to emulate the caret of the native select.</li>
+</ul>
+<div class="afd-separator"></div>
+<p>The width of the select is going to fit the wide width of it container</p>
+<div class="afd-selectfield">
+  <select class="afd-selectfield__select">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+  </select>
+  <span class="afd-selectfield__caret"></span>
+</div>
+
+<p>Here is the code example</p>
+{% highlight html %}
+  <div class="afd-selectfield">
+    <select class="afd-selectfield__select">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+    </select>
+    <span class="afd-selectfield__caret"></span>
+  </div>
+{% endhighlight %}
