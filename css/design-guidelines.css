@@ -115,14 +115,14 @@ a:hover {
 .thumbnails-3 {
   width: 103%;
   margin-left: -3% !important;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
   overflow: hidden;
 }
 .thumbnails-3 > li {
   width: 30.3333%;
   height: 260px;
   float: left;
-  margin-left: 3%; 
+  margin-left: 3%;
   margin-bottom: 25px;
   list-style: none;
 }
@@ -220,7 +220,7 @@ p,
 }
 .post pre {
   padding: 1.5em;
-  overflow-x: auto; 
+  overflow-x: auto;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
@@ -245,122 +245,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   text-transform: uppercase;
 }
-
-/*****************************   BUTTONS   *****************************/
-
-.btn,
-input.btn,
-input[type="submit"] {
-  display: inline-block;
-  height: 2.6em;
-  line-height: 2.5em;
-  padding: 0 1.1em;
-  margin: 0;
-  font-size: 12px;
-  font-weight: 600;
-  font-family: "Source Sans Pro";
-  color: #FFF;
-  background-color: #026CB6;
-  background-image: none;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 0 !important;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-      -ms-border-radius: 0;
-       -o-border-radius: 0;
-          border-radius: 0;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-}
-.btn:hover,
-input.btn:hover,
-input[type="submit"]:hover {
-  color: #FFF;
-  background-color: #5E95C7;
-  text-decoration: none;
-}
-.btn-medium {
-  font-size: 16px;
-  margin: 16px 0;
-}
-.btn-big {
-  font-size: 24px;
-  margin: 25px 0;
-}
-.btn-second {
-  background-color: #999999 !important;
-  color: #FFF;
-}
-.btn-second:hover {
-  background-color: #999999 !important;
-  opacity: .8;
-}
-.btn.btn-disabled,
-.btn[disabled]{
-  background-color: #ccc !important;
-  color: #fafafa !important;
-}
-.btn.btn-disabled:hover,
-.btn[disabled]:hover {
-  background-color: #ccc;
-  color: #f7f7f7;
-  cursor: not-allowed;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Grids */
-.afd-grid {
-  *zoom: 1;
-}
-.afd-grid:before,
-.afd-grid:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.afd-grid:after {
-  clear: both;
-}
-
-.afd-grid__col {
-  float: left;
-  margin-left: 2%;
-  margin-bottom: 1.5%;
-}
-.afd-grid__col:first-child {
-  margin-left: 0;
-}
-
-.afd-grid__col--1-1 { width: 100%; }
-
-.afd-grid__col--1-2 { width: 49%; }
-
-.afd-grid__col--1-3 { width: 32%; }
-.afd-grid__col--2-3 { width: 66%; }
-
-.afd-grid__col--1-4 { width: 23.5%; }
-.afd-grid__col--2-4 { width: 49%; }
-.afd-grid__col--3-4 { width: 74.5%; }
-
-.afd-grid__col--1-5 { width: 18.4%; }
-.afd-grid__col--2-5 { width: 38.8%; }
-.afd-grid__col--3-5 { width: 59.2%; }
-.afd-grid__col--4-5 { width: 79.6%; }
 
 
 .afd-grids-examples .afd-grid__col {
@@ -389,78 +273,5 @@ input[type="submit"]:hover {
   display: block;
   height: 50px;
 }
-/**************  SELECTS  **********************/
-.afd-selectfield {
-  position: relative;
-  min-height: 2.5em;
-  min-width: 150px;
-  margin-bottom: 1.4em;
-  border: 1px solid #e1e1e1;
-  background: #FFF;
-}
-.afd-selectfield__select {
-  position: absolute;
-  font-size: inherit;
-  top: 0;
-  left: 0;  
-  width: 100%;
-  height: 100%;
-  padding: 0.55em .8em;
-  border: none;
-  background: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.afd-selectfield__caret {
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: 50%;
-  right: .8em;
-  margin-top: -.2em;
-  border: .4em solid transparent;
-  border-top-color: #999;
-}
 
-/**************  INPUTS TEXTAREAS  **********************/
-.afd-textfield {
-  position: relative;
-  margin-bottom: 1.4em;
-}
-.afd-textfield__input,
-.afd-textfield__textarea {
-  font-size: inherit;
-  width: 100%;
-  max-width: 100%;
-  padding: 0.55em .8em;
-  vertical-align: middle;
-  border: 1px solid #e1e1e1;
-  outline: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.afd-textfield__textarea {
-  min-height: 175px;
-  line-height: 1.5em;
-}
-.afd-textfield__input {
-  min-height: 2.5em;
-}
-.afd-textfield__label {
-  display: block;
-  font-size: .85rem;
-  margin-bottom: .4em;
-  font-weight: bolder;
-}
-.afd-textfield__input:hover,
-.afd-textfield__textarea:hover {
-  border-color: #bbbbbb;
-}
-
-.afd-textfield__input:focus,
-.afd-textfield__textarea:focus {
-  border-color: #303030;
-}
 

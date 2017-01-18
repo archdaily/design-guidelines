@@ -7,6 +7,7 @@ title:  "Textfields"
 <p>To add labels, put them before the input or textarea and inside the wrapper and add to it the class ".afd-textfield__label"<p>
 <p>Remember to add the "for" attribute to the label to keep it connected with the id of their textfield.</p>
 
+
 <h2 class="title-primary">Inputs</h2>
 
 <p>Here is the code example</p>
@@ -18,6 +19,27 @@ title:  "Textfields"
   <div class="afd-textfield">
     <label class="afd-textfield__label" for="afd-input">Label</label>
     <input id="afd-input" type="text" class="afd-textfield__input">
+  </div>
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+<h2 class="title-primary">Inputs with submit</h2>
+<p>If you want to use an input with the submit button attached to the right of it you can replace the class .afd-textfield of the wraper by the class .afd-textfield--with-submit</p>
+<p>Here is the code example</p>
+<div class="afd-textfield">
+  <label class="afd-textfield__label" for="afd-input">Label</label>
+  <div class="afd-textfield--with-submit">
+    <input placeholder="This is the input" id="afd-input" type="text" class="afd-textfield__input">
+    <input type="submit" value="Submit" class="afd-btn">
+  </div>
+</div>
+{% highlight html %}
+  <div class="afd-textfield">
+    <label class="afd-textfield__label" for="afd-input">Label</label>
+    <div class="afd-textfield--with-submit">
+      <input placeholder="This is the input" id="afd-input" type="text" class="afd-textfield__input">
+      <input type="submit" value="Submit" class="afd-btn">
+    </div>
   </div>
 {% endhighlight %}
 <div class="afd-separator"></div>
