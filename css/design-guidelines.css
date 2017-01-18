@@ -219,6 +219,7 @@ p,
   margin-bottom: 25px;
 }
 .post pre {
+  font-size: 14px;
   padding: 1.5em;
   overflow-x: auto;
 }

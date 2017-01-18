@@ -2,3 +2,69 @@
 layout: post
 title:  "Navbars"
 ---
+
+<h2 class="title-primary">1. Create a fixed navbar on the top of the window:</h2>
+<p>The class "afd-nav" creates the nav. The class "afd-nav--only-nav" keeps this element fixed at the top.</p>
+{% highlight html %}
+  <nav class="afd-nav afd-nav--only-nav">
+  </nav>
+{% endhighlight %}
+
+
+<h2 class="title-primary">2. Add a centered container to wrap the UI elements:</h2>
+<p>Here you need a div with the class "afd-container-main" to center and limit the with of the elements, "clearfix" to avoid float issues, "afd-nav__container" to positionate absolute elementes and "afd-desktop-e" to hidde this element in mobile devices.</p>
+
+{% highlight html %}
+  <nav class="afd-nav afd-nav--only-nav">
+    <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
+    </div>
+  </nav>
+{% endhighlight %}
+
+<h2 class="title-primary">3. Add a basic menu:</h2>
+<p>Use an ul, with list items and anchors inside those items. The classes are named using BEM.</p>
+
+{% highlight html %}
+  <nav class="afd-nav afd-nav--only-nav">
+    <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
+      <ul class="afd-nav__list">
+        <li class="afd-nav__item">
+          <a class="afd-nav__link" href="link-to-the-item">An item</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+{% endhighlight %}
+
+<h2 class="title-primary">3. Add dropdown items:</h2>
+<p>Here an example of what classes and elements you need to build it.</p>
+
+{% highlight html %}
+  <nav class="afd-nav afd-nav--only-nav">
+    <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
+      <ul class="afd-nav__list">
+
+        <li class="afd-nav__item">
+          <a class="afd-nav__link" href="link-to-the-item">An item without dropdown</a>
+        </li>
+
+        <li class="afd-nav__item afd-nav__item--dropdown afd-nav__item--dropdown--simple">
+          <a class="afd-nav__link" href="link-to-the-item">
+            An item with dropdown
+            <b class="afd-nav__caret"></b>
+          </a>
+
+          <ul class="afd-nav__dropdown afd-nav__dropdown__list">
+            <li>
+              <a class="afd-nav__dropdown__link" href="link-to-dropdown-item">
+                An item in dropdown menu
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+{% endhighlight %}
+
