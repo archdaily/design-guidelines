@@ -3,23 +3,62 @@ layout: post
 title:  "Tables"
 ---
 
-<p>The only thing that you have to do is to add the class ".afd-table" to the table tag and then use the proper tags inside this</p>
+<p>The only thing that you have to do is to add the class ".afd-table" to the table tag and then use the proper tags inside this.</p>
+
+<table class="afd-table">
+  <thead>
+    <tr>
+      <th>Title 1</th>
+      <th>Title 2</th>
+      <th>Title 3</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Value 1</td>
+      <td>Value 2</td>
+      <td>Value 3</td>
+    </tr>
+    <tr>
+      <td>Value 1</td>
+      <td>Value 2</td>
+      <td>Value 3</td>
+    </tr>
+    <tr>
+      <td>Value 1</td>
+      <td>Value 2</td>
+      <td>Value 3</td>
+    </tr>
+  </tbody>
+</table>
+
 {% highlight html %}
   <table class="afd-table">
-
     <thead>
       <tr>
-        <th></th>
-        <th></th>
+        <th>Title 1</th>
+        <th>Title 2</th>
+        <th>Title 3</th>
       </tr>
     </thead>
 
     <tbody>
       <tr>
-        <td></td>
-        <td></td>
+        <td>Value 1</td>
+        <td>Value 2</td>
+        <td>Value 3</td>
+      </tr>
+      <tr>
+        <td>Value 1</td>
+        <td>Value 2</td>
+        <td>Value 3</td>
+      </tr>
+      <tr>
+        <td>Value 1</td>
+        <td>Value 2</td>
+        <td>Value 3</td>
       </tr>
     </tbody>
-
   </table>
 {% endhighlight %}
