@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Pagination"
+---
+
+<p>Very easy! If you are using <a target="_blank" href="https://github.com/kaminari/kaminari">Kaminari</a>, just wrap the kaminari's helper using a div with the class "afd-pagination"</p>
+
+<div class="afd-pagination">
+  <nav class="pagination">
+    <span class="prev">
+      <a href="">‹ PREV</a>
+    </span>
+    <span class="first">
+      <a href="">FIRST</a>
+    </span>
+    <span class="page ">1</span>
+    <span class="page current">2</span>
+    <span class="page ">3</span>
+    <span class="next">
+      <a href="" rel="next">NEXT ›</a>
+    </span>
+    <span class="last">
+      <a href="">LAST</a>
+    </span>
+  </nav>
+</div>
+
+{% highlight erb %}
+  <div class="afd-pagination">
+    <%= paginate @articles %>
+  </div>
+
+{% endhighlight %}
