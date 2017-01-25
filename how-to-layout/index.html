@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "How to Layout - Some timps for Backends"
+---
+<h2 class="title-primary">1. Wrap your application with a centered container using the class 'afd-container-main'.</h2>
+{% highlight html %}
+<html>
+  <head></head>
+  <body>
+    <div class="afd-container-main">
+      <!-- Here is the content of your app -->
+    </div>
+  </body>
+</html>
+
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+<h2 class="title-primary">2. If you have just a form inside a view, wrap it inside a smaller container with a little padding, using the classes 'afd-container-main' + 'afd-container-main--small' + 'afd-container-padding'</h2>
+{% highlight html %}
+
+<div class="afd-container-main afd-container-main--small afd-container-padding">
+  <!-- Here is your form -->
+</div>
+
+{% endhighlight %}
+<div class="afd-separator"></div>
