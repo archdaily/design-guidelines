@@ -10,7 +10,7 @@ title:  "Modals"
 
 <h2 class="title-primary" id="modal-step-1">1. Basic HTML:</h2>
 <p>
-  <button class="afd-btn" onclick="afdModals.open()">Open this modal example</button>
+  <button class="afd-btn" onclick="AFD.modals.open()">Open this modal example</button>
 </p>
 
 {% highlight html %}
@@ -98,17 +98,17 @@ title:  "Modals"
 
 <h2 class="title-primary" id="modal-step-3">3. Javascript:</h2>
 
-<p>We have instancied the object 'afdModals', and this object have the methods 'close' and 'open' (The last one allways call the first one from behind). This works as a helper to avoid being repetitive when you are writing the logic to open and close the modals.</p>
-<p>Thus, when you are writing the logic to open a modal, you only need to call inside this scope the 'afdModals.open' method. Check the code bellow:</p>
+<p>We have instancied the object 'AFD.modals', and this object have the methods 'close' and 'open' (The last one allways call the first one from behind). This works as a helper to avoid being repetitive when you are writing the logic to open and close the modals.</p>
+<p>Thus, when you are writing the logic to open a modal, you only need to call inside this scope the 'AFD.modals.open' method. Check the code bellow:</p>
 
 {% highlight js %}
 
-// With this you can open a modal when you make a click in '#my-element'.
+// With this you can open a modal when you make a click on '#my-element'.
 // Also, you don't need to call the 'close' method, because this is called when you call the 'open' method.
 
 $(document).ready(function() {
   $('#my-element').on( "click", function() {
-    afdModals.open();
+    AFD.modals.open();
   });
 });
 
