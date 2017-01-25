@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+          var AFD = {}
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
@@ -20,6 +23,7 @@
         <script>
           (function(e){e.fn.visible=function(t,n,r){var i=e(this).eq(0),s=i.get(0),o=e(window),u=o.scrollTop(),a=u+o.height(),f=o.scrollLeft(),l=f+o.width(),c=i.offset().top,h=c+i.height(),p=i.offset().left,d=p+i.width(),v=t===true?h:c,m=t===true?c:h,g=t===true?d:p,y=t===true?p:d,b=n===true?s.offsetWidth*s.offsetHeight:true,r=r?r:"both";if(r==="both")return!!b&&m<=a&&v>=u&&y<=l&&g>=f;else if(r==="vertical")return!!b&&m<=a&&v>=u;else if(r==="horizontal")return!!b&&y<=l&&g>=f}})(jQuery)
         </script>
+        <script src="http://afd.adsttc.com.s3-website-us-east-1.amazonaws.com/afd/alfred.js"></script>
 
     </head>
     <body>
@@ -59,6 +63,9 @@
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="{{ site.baseurl }}/grids">Grids</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="{{ site.baseurl }}/modals">Modals</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="{{ site.baseurl }}/navbars">Navbars</a>

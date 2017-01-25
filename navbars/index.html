@@ -24,10 +24,10 @@ title:  "Navbars"
 <p>Here you need a div with the class "afd-container-main" to center and limit the with of the elements, "clearfix" to avoid float issues, "afd-nav__container" to positionate absolute elementes and "afd-desktop-e" to hidde this element in mobile devices.</p>
 
 {% highlight html %}
-  <nav class="afd-nav afd-nav--only-nav">
-    <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
-    </div>
-  </nav>
+<nav class="afd-nav afd-nav--only-nav">
+  <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
+  </div>
+</nav>
 {% endhighlight %}
 
 <div class="afd-separator"></div>
@@ -36,15 +36,15 @@ title:  "Navbars"
 <p>Use an ul, with list items and anchors inside those items. The classes are named using BEM.</p>
 
 {% highlight html %}
-  <nav class="afd-nav afd-nav--only-nav">
-    <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
-      <ul class="afd-nav__list">
-        <li class="afd-nav__item">
-          <a class="afd-nav__link" href="link-to-the-item">An item</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<nav class="afd-nav afd-nav--only-nav">
+  <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
+    <ul class="afd-nav__list">
+      <li class="afd-nav__item">
+        <a class="afd-nav__link" href="link-to-the-item">An item</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 {% endhighlight %}
 
 <div class="afd-separator"></div>
@@ -53,35 +53,35 @@ title:  "Navbars"
 <p>Here an example of what classes and elements you need to build it.</p>
 
 {% highlight html %}
-  <nav class="afd-nav afd-nav--only-nav">
-    <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
-      <ul class="afd-nav__list">
+<nav class="afd-nav afd-nav--only-nav">
+  <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
+    <ul class="afd-nav__list">
 
-        <li class="afd-nav__item">
-          <a class="afd-nav__link" href="link-to-the-item">An item without dropdown</a>
-        </li>
+      <li class="afd-nav__item">
+        <a class="afd-nav__link" href="link-to-the-item">An item without dropdown</a>
+      </li>
 
-        <!-- Here starts the item with dropdown -->
-        <li class="afd-nav__item afd-nav__item--dropdown afd-nav__item--dropdown--simple">
-          <a class="afd-nav__link" href="link-to-the-item">
-            An item with dropdown
-            <b class="afd-nav__caret"></b>
-          </a>
+      <!-- Here starts the item with dropdown -->
+      <li class="afd-nav__item afd-nav__item--dropdown afd-nav__item--dropdown--simple">
+        <a class="afd-nav__link" href="link-to-the-item">
+          An item with dropdown
+          <b class="afd-nav__caret"></b>
+        </a>
 
-          <!-- This is the dropdown list -->
-          <ul class="afd-nav__dropdown afd-nav__dropdown__list">
-            <li>
-              <a class="afd-nav__dropdown__link" href="link-to-dropdown-item">
-                An item in dropdown menu
-              </a>
-            </li>
-          </ul>
-        </li>
-        <!-- The end of the dropdown item -->
+        <!-- This is the dropdown list -->
+        <ul class="afd-nav__dropdown afd-nav__dropdown__list">
+          <li>
+            <a class="afd-nav__dropdown__link" href="link-to-dropdown-item">
+              An item in dropdown menu
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!-- The end of the dropdown item -->
 
-      </ul>
-    </div>
-  </nav>
+    </ul>
+  </div>
+</nav>
 {% endhighlight %}
 
 <div class="afd-separator"></div>
@@ -90,20 +90,20 @@ title:  "Navbars"
 <h2 class="title-primary" id="nav-step-4">4.1. Add the menu icon-button:</h2>
 
 {% highlight html %}
-  <nav class="afd-nav afd-nav--only-nav">
+<nav class="afd-nav afd-nav--only-nav">
 
-    <!-- This is de menu icon-button for mobile -->
-    <div class="afd-nav__button-menu afd-mobile-e" id="js-afd-nav__button-menu">
-      <div class="afd-nav__button-menu__line afd-nav__button-menu__line--1"></div>
-      <div class="afd-nav__button-menu__line afd-nav__button-menu__line--2"></div>
-      <div class="afd-nav__button-menu__line afd-nav__button-menu__line--3"></div>
-    </div>
-    <!-- End of the menu button -->
+  <!-- This is de menu icon-button for mobile -->
+  <div class="afd-nav__button-menu afd-mobile-e" id="js-afd-nav__button-menu">
+    <div class="afd-nav__button-menu__line afd-nav__button-menu__line--1"></div>
+    <div class="afd-nav__button-menu__line afd-nav__button-menu__line--2"></div>
+    <div class="afd-nav__button-menu__line afd-nav__button-menu__line--3"></div>
+  </div>
+  <!-- End of the menu button -->
 
 
-    <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
-    </div>
-  </nav>
+  <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
+  </div>
+</nav>
 {% endhighlight %}
 
 <div class="afd-separator"></div>
@@ -112,42 +112,42 @@ title:  "Navbars"
 <p>The menu for mobile is another NAV element immediately next to the first one made for desktop devices. This mobile menu is made separated of the other in case you want to show other items. Also you must include the buton to close the menu. Here is the code example:</p>
 
 {% highlight html %}
-  <nav class="afd-nav afd-nav--only-nav">
+<nav class="afd-nav afd-nav--only-nav">
 
-    <!-- This is de menu icon/button for mobile -->
-    <div class="afd-nav__button-menu afd-mobile-e" id="js-afd-nav__button-menu">
-      <div class="afd-nav__button-menu__line afd-nav__button-menu__line--1"></div>
-      <div class="afd-nav__button-menu__line afd-nav__button-menu__line--2"></div>
-      <div class="afd-nav__button-menu__line afd-nav__button-menu__line--3"></div>
-    </div>
-    <!-- End of the menu button -->
-
-
-    <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
-    </div>
-  </nav>
+  <!-- This is de menu icon/button for mobile -->
+  <div class="afd-nav__button-menu afd-mobile-e" id="js-afd-nav__button-menu">
+    <div class="afd-nav__button-menu__line afd-nav__button-menu__line--1"></div>
+    <div class="afd-nav__button-menu__line afd-nav__button-menu__line--2"></div>
+    <div class="afd-nav__button-menu__line afd-nav__button-menu__line--3"></div>
+  </div>
+  <!-- End of the menu button -->
 
 
-  <!-- This is your mobile version of the menu -->
-  <nav class="afd-nav-mobile">
+  <div class="afd-nav__container afd-container-main clearfix afd-desktop-e">
+  </div>
+</nav>
 
-    <!-- This is the button to close the menu -->
-    <div class="afd-nav-mobile__subpane">
-      <button aria-label="Close Navbar" class="afd-nav-mobile__close" id="js-afd-nav-mobile__close">
-        <span class="afd-nav-mobile__close__icon"></span>
-      </button>
-    </div>
-    <!-- The end of the close button -->
 
-    <div class="afd-nav-mobile__subpane afd-nav-mobile__menu-content">
-      <ul class="afd-nav-mobile__list">
-        <li class="afd-nav-mobile__item">
-          <a class="afd-nav-mobile__label" href="item-path">Some item</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!-- The end of the mobile menu -->
+<!-- This is your mobile version of the menu -->
+<nav class="afd-nav-mobile">
+
+  <!-- This is the button to close the menu -->
+  <div class="afd-nav-mobile__subpane">
+    <button aria-label="Close Navbar" class="afd-nav-mobile__close" id="js-afd-nav-mobile__close">
+      <span class="afd-nav-mobile__close__icon"></span>
+    </button>
+  </div>
+  <!-- The end of the close button -->
+
+  <div class="afd-nav-mobile__subpane afd-nav-mobile__menu-content">
+    <ul class="afd-nav-mobile__list">
+      <li class="afd-nav-mobile__item">
+        <a class="afd-nav-mobile__label" href="item-path">Some item</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- The end of the mobile menu -->
 {% endhighlight %}
 
 
