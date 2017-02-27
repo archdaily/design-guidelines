@@ -41,9 +41,10 @@ pre {
   width: 260px;
   padding: 25px;
   background: #f1f1f1;
+  overflow-y: auto;
 }
 .nav__logo {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .nav__link {
   line-height: 2.1em;

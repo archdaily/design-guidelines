@@ -1,0 +1,115 @@
+---
+layout: post
+title:  "Tooltips"
+---
+<h2 class="title-primary"><a href="#tips1">1. Centered tooltips</a></h2>
+<h2 class="title-primary"><a href="#tips2">2. Right tooltips</a></h2>
+<h2 class="title-primary"><a href="#tips3">3. Left tooltips</a></h2>
+<h2 class="title-primary"><a href="#tips4">4. Tooltips over colored backgrounds</a></h2>
+<div class="afd-separator"></div>
+
+<h2 id="tips1" class="title-primary">1. Centered tooltips</h2>
+<p>
+  If you have a text and this text needs to be explaied, just hover the question mark.
+  <span class="afd-tips">
+    <span class="afd-tips__icon afd-tips__icon--border">
+      <span class="afd-tips__txt afd-tips__txt--bottom">
+        And here you get the explanation
+      </span>
+    </span>
+  </span>
+</p>
+<p>
+  The class 'afd-tips__txt--bottom' makes the tooltip appears below the question mark.
+</p>
+
+{% highlight html %}
+<p>
+  If you have a text and this text needs to be explaied, just hover the question mark
+  <span class="afd-tips">
+    <span class="afd-tips__icon afd-tips__icon--border">
+      <span class="afd-tips__txt afd-tips__txt--bottom">
+        And here you get the explanation
+      </span>
+    </span>
+  </span>
+</p>
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+<h2 id="tips2" class="title-primary">2. Right tooltips</h2>
+<p>
+  But you also can make appear the tooltip at the right of the question mark replacing the class 'afd-tips__txt--bottom' by the class 'afd-tips__txt--right'
+  <span class="afd-tips">
+    <span class="afd-tips__icon afd-tips__icon--border">
+      <span class="afd-tips__txt afd-tips__txt--right">
+        And the tooltip appears by the right
+      </span>
+    </span>
+  </span>
+</p>
+{% highlight html %}
+<p>
+  Text
+  <span class="afd-tips">
+    <span class="afd-tips__icon afd-tips__icon--border">
+      <span class="afd-tips__txt afd-tips__txt--right">
+        Right tooltip
+      </span>
+    </span>
+  </span>
+</p>
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+<h2 id="tips3" class="title-primary">3. Left tooltips</h2>
+<p>
+  Obviously you can also make appear the tooltip at the left of the question mark replacing the class 'afd-tips__txt--bottom' by the class 'afd-tips__txt--left'
+  <span class="afd-tips">
+    <span class="afd-tips__icon afd-tips__icon--border">
+      <span class="afd-tips__txt afd-tips__txt--left">
+        And the tooltip appears by the left
+      </span>
+    </span>
+  </span>
+</p>
+{% highlight html %}
+<p>
+  Text
+  <span class="afd-tips">
+    <span class="afd-tips__icon afd-tips__icon--border">
+      <span class="afd-tips__txt afd-tips__txt--left">
+        Left tooltip
+      </span>
+    </span>
+  </span>
+</p>
+{% endhighlight %}
+<div class="afd-separator"></div>
+
+<h2 id="tips4" class="title-primary">4. Tooltips over colored backgrounds</h2>
+<p style="background-color: #026CB6;padding:2em;color:white;">
+  If you are working with text over a dark colored background you have to remove the class 'afd-tips__icon--border'
+  <span class="afd-tips">
+    <span class="afd-tips__icon">
+      <span class="afd-tips__txt afd-tips__txt--bottom">
+        I am the tooltip again
+      </span>
+    </span>
+  </span>
+</p>
+{% highlight html %}
+<p>
+  Text
+  <span class="afd-tips">
+    <span class="afd-tips__icon">
+      <span class="afd-tips__txt afd-tips__txt--bottom">
+        Tooltip
+      </span>
+    </span>
+  </span>
+</p>
+{% endhighlight %}
+
+
+
