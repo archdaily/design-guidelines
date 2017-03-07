@@ -47,6 +47,7 @@ pre {
   margin-bottom: 20px;
 }
 .nav__link {
+  font-size: .9em;
   line-height: 2.1em;
   font-weight: 600;
   text-transform: uppercase;
